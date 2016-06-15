@@ -1,0 +1,1 @@
+Die Font-Awesome Fonts werden automatisch durch die install-dev.sh aus dem UIKit-Ordner der Bower Components kopiert.

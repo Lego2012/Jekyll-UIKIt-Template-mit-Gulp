@@ -1,0 +1,1 @@
+Sass benötigt für den Import nur den Dateinamen, da die Pfade im Sass-Task in den Options hinterlegt sind.

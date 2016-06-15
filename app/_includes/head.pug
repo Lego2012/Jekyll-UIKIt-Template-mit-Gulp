@@ -8,7 +8,9 @@ head
   | {% else %}
   meta(name='keywords', itemprop='keywords', content='')
   | {% endif %}
+
   | {% seo %}
+
   meta(name='robots', content='index, follow')
 
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">

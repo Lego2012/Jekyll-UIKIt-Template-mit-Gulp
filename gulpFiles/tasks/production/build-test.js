@@ -10,7 +10,7 @@ gulp.task('build-test:production', function(callback) {
     'sass',
     'scriptsHead',
     'scriptsFoot',
-    //'fonts:production',
+    'fonts:production',
     'images:production',
   ],
   'revision',

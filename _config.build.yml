@@ -1,4 +1,4 @@
-url: "http://confidea.de" # the base hostname & protocol for your site
+url: "http://domain.tld" # the base hostname & protocol for your site
 
 future: false
 show_drafts: false

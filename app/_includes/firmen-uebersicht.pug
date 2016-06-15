@@ -1,0 +1,15 @@
+.uk-container.uk-container-center
+  h1 Dies ist die Übersichtsseite für die Firmen
+  p Die Daten dieser fiktiven Unternehmen kommen aus der Datei `unternehmen.yaml`, in der 500 Musterfirmen übersichtlich gelistet sind. Die Datei entstand aus einer Excel-Datei, die vom Kunden gepflegt und als CSV-Datei gespeichert wird. Wir haben die Datei dann von CSV zu YAML konvertiert und dazu den #[a(href='http://www.convertcsv.com/csv-to-yaml.htm') CSV Converter] benutzt.
+  | {% assign partners = site.data.unternehmen %}
+  | {% for partner in partners %}
+  hr
+  h2 Firma: {{ partner.firma }}
+  h2 Stadt: {{ partner.stadt }}
+  h3
+    a(href='{{ partner.permalink }}') {{ partner.webseite }}
+  p Email: {{ partner.mail }}
+
+  p Name: {{ partner.vorname }} {{ partner.nachname }}
+  | {% endfor %}
+  hr

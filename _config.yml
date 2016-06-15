@@ -1,42 +1,29 @@
-title: confidea - Webdesign - Redesign - CMS - SEO
-sitename: confidea - neue kunden über das internet # Wird für SEO und Twitter genutzt
+title: Dies ist der Webseitentitel
+sitename: Dies ist der Webseitenname # Wird für SEO und Twitter genutzt
 title-divider: " @ "
 description: >
-  Confidea macht Webseiten, mit denen Sie neue Kunden über das Internet gewinnen. Von Confidea gemachte Webseiten sind sehr schnell, responsiv, sicher und für die Zukunft vorbereitet.
-keywords: Webdesign, Content Management Systeme, SEO, Jekyll, WordPress, TYPO3
+  Hier steht die Beschreibung, die lt. SEO nicht mehr als 156 Zeichen (inkl. Leerzeichen) haben soll
+keywords: keyword1, keyword2, keyword3, keyword4, keyword5, keyword6, keyword7 # Nicht mehr als 7 Keywords
 
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "" # das Verzeichnis der Webseite, z. B. /blog/
 url: "http://localhost:9999"
 
-author: Leo Merkel
-
-image:
-  source: _assets/images/_fullsize
-  output: generated
-  presets:
-    users:
-      attr:
-        class: user-portrait
-        itemprop: image
-      width: 350
-    half:
-      width: 400
-      height: 400
+author: Vorname Nachname
 
 owner:
-  name: Leo Merkel
+  name: Vorname Nachname
   avatar: avatar.png
   bio:
-  email: leo.merkel@confidea.de
+  email: email@domain.tld
   disqus: # disqus shortname
-  location: Emmerthal, Germany
+  location: Ort, Land
 
 twitter:
-  username: Lemgo2000
+  username:
 github:
-  username: Lego2012
+  username:
 skype:
-  username: Leofilm2005
+  username:
 instagram:
   username:
 facebook:
@@ -45,25 +32,25 @@ dribble:
   username:
 google_site_verification:
 social:
-  name: # If the user or organization name differs from the site's name
-  links: # An array of links to social media profile
+  name: # Falls der Benutzer oder die Organisation von dem Seitennamen abweichen sollte
+  links: # Eine Reihe von Links zu den Profilen der sozialen Medien
 
 # Zusätzliche Angaben für Humans.txt
-webdesigner: Leo Merkel
+webdesigner: Vorname Nachname
 danke1:
   name: Vorname Nachname
-  what: Fotos
+  what: was-hat-gemacht
 danke2:
   name: Vorname Nachname
-  what: Fotos
+  what: was-hat-gemacht
 danke3:
   name: Vorname Nachname
-  what: Fotos
+  what: was-hat-gemacht
 language: German
 tools:
   standards: "HTML5, CSS3, Jekyll, JavaScript"
   software: "git, Atom, Gulp.js, npm"
-host: All-Inkl
+host: Hostername
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone: Europe/Berlin
 
@@ -78,18 +65,18 @@ gems:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
-  - mini_magick
 
 permalink: :title/
 
 paginate: 5
 paginate_path: "/page/:num/"
 
-# Gulp takes care of images and assets
-exclude: ['img', 'css', 'js', 'fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
+# Gulp kümmert sich um Bilder und Assets
+exclude: ['img', 'css', 'js', 'fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico', 'img_README.md']
 
+# Hier wird u. a. das Pages-Verzeichnis eingebunden
 include: ['_pages', '.htaccess', 'robots.txt', 'humans.txt']
 
-# `_config.build.yml` sets `future` and `show_drafts` to `false`
+# `_config.build.yml` setzt `future` und `show_drafts` auf `false`
 future: true
-show_drafts: false
+show_drafts: true

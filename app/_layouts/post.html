@@ -2,16 +2,8 @@
 layout: default
 ---
 
-<section class="post-headline">
-  <header class="lm-header">
-    <hgroup class="uk-container uk-container-center uk-text-center">
-        <h1> {{ page.headline }}</h1>
-      </hgroup>
-  </header>
-</section>
-
 <section class="uk-container uk-container-center">
-  <h2 class="post-title">{{ page.title }}</h2>
+  <h1 class="post-title">{{ page.title }}</h1>
 
   {% include date_post.html postclass='date-post' %}
 
@@ -24,6 +16,6 @@ layout: default
   </article>
 
   <aside class="uebersicht uk-h2">
-    <a href="/blog">Zurück zur Übersicht</a>
+    <a href="/blog/">Zurück zur Übersicht</a>
   </aside>
 </section>

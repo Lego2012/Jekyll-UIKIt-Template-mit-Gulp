@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<section class="uk-container uk-container-center">
+  <h1 class="post-title">{{ page.title }}</h1>
+
+  {% include date_post.html postclass='date-post' %}
+
+  <p>{% if page.author %}{{ page.author }}{% endif %}</p>
+
+  <p>{% if page.meta %}{{ page.meta }}{% endif %}</p>
+
+  <article>
+    {{ content }}
+  </article>
+
+  <aside class="uebersicht uk-h2">
+    <a href="/blog">Zurück zur Übersicht</a>
+  </aside>
+</section>

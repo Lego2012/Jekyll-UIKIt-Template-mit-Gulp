@@ -35,7 +35,7 @@ module.exports = {
     }
   },
   delete: {
-    src: [developmentAssets + '/css', developmentAssets + '/js', developmentAssets + '/fonts']
+    src: [developmentAssets + '/css', developmentAssets + '/js']
   },
   pug: {
     src: src + '/_includes/**/*.pug',
@@ -43,10 +43,6 @@ module.exports = {
     options: {
       pretty: true
     }
-  },
-  animate: {
-    src: bower + '/animate.css/animate.css',
-    dest: srcAssets + '/scss/vendor'
   },
   jekyll: {
     development: {
