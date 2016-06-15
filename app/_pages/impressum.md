@@ -13,7 +13,6 @@ permalink: "/impressum/"
 bodyClass: impressum
 start_img:
 thumb_img:
-navigation_weight:
 ---
 <address>
   Leopold Merkel<br>

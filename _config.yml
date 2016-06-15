@@ -17,6 +17,7 @@ owner:
   email: email@domain.tld
   disqus: # disqus shortname
   location: Ort, Land
+  ga: UA-59354571-1 # Google Analytics ID
 
 twitter:
   username:
@@ -65,6 +66,7 @@ gems:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
+  - i18n
 
 permalink: :title/
 
@@ -72,11 +74,14 @@ paginate: 5
 paginate_path: "/page/:num/"
 
 # Gulp kümmert sich um Bilder und Assets
-exclude: ['img', 'css', 'js', 'fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico', 'img_README.md']
+exclude: ['img', 'css', 'js', 'fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
 
 # Hier wird u. a. das Pages-Verzeichnis eingebunden
-include: ['_pages', '.htaccess', 'robots.txt', 'humans.txt']
+include: ['_pages', '_authors', '.htaccess', 'robots.txt', 'humans.txt']
 
 # `_config.build.yml` setzt `future` und `show_drafts` auf `false`
 future: true
 show_drafts: true
+
+collections:
+  - authors

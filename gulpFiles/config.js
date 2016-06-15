@@ -35,7 +35,7 @@ module.exports = {
     }
   },
   delete: {
-    src: [developmentAssets + '/css', developmentAssets + '/js']
+    src: [development, developmentAssets + '/css', developmentAssets + '/js']
   },
   pug: {
     src: src + '/_includes/**/*.pug',
@@ -243,7 +243,7 @@ module.exports = {
       emptyDirectories: true,
       recursive: true,
       clean: true,
-      exclude: ['.DS_Store'],
+      exclude: ['.DS_Store', '_authors-README.md'],
       include: []
     }
   }

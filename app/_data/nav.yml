@@ -1,12 +1,10 @@
 - title: Startseite
   url: /
-- title: Über uns
-  url: /ueber-uns/
-- title: Beispiele
-  url: /beispiele-webdesign/
-- title: Downloads
-  url: /downloads/
-- title: Kontakt
-  url: /kontakt/
+- title: Autoren
+  url: /autoren/
+- title: Neue Seite
+  url: /neue-seite/
+- title: Firmen
+  url: /firmen/
 - title: Blog
   url: /blog/

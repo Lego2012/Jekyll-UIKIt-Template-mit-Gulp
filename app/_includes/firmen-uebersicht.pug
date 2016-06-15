@@ -8,7 +8,8 @@
   h2 Stadt: {{ partner.stadt }}
   h3
     a(href='{{ partner.permalink }}') {{ partner.webseite }}
-  p Email: {{ partner.mail }}
+  p Email:&nbsp;
+    a(href='mailto:{{ partner.permalink }}') {{ partner.mail }}
 
   p Name: {{ partner.vorname }} {{ partner.nachname }}
   | {% endfor %}

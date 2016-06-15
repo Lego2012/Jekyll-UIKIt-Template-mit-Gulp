@@ -17,9 +17,9 @@ var config       = require('../../config').sass;
       .pipe(sass({includePaths: [
          'app/_assets/scss/partials',
          'app/_assets/scss/vendor',
-         'app/_bower_components/uikit/scss',
-         'app/_bower_components/uikit/scss/components/',
-         'app/_bower_components/juice/dist'
+         'bower_components/uikit/scss',
+         'bower_components/uikit/scss/components/',
+         'bower_components/juice/dist'
       ]}).on('error', sass.logError))
       .pipe(sourcemaps.write('./'))
       .pipe(gulp.dest(config.dest));

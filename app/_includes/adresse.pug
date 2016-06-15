@@ -1,8 +1,8 @@
 .uk-container.uk-container-center
-  h2 Hier finden Sie uns:
+  p Hier finden Sie uns:
 
-  p.uk-h4 {{ site.adresse.name }}
-  p {{ site.adresse.strasse }}
-  p {{ site.adresse.plz }} {{ site.adresse.ort }}
-  p Mobil: {{ site.adresse.mobil }}
-  p Festnetz: {{ site.adresse.festnetz }}
+  p.uk-h2 Das bin ich: {{ site.data.adresse.name }}
+  p Dies ist meine Strasse: {{ site.data.adresse.strasse }}
+  p Und hier ist meine Postleitzahl: {{ site.data.adresse.plz }} im Ort: {{ site.data.adresse.ort }}
+  p Mobiltelefon: {{ site.data.adresse.mobil }}
+  p Festnetz: {{ site.data.adresse.telefon }}
