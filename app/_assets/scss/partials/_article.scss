@@ -1,0 +1,17 @@
+.uk-article-title {
+  background-color: lighten($conf-brand, 40%);
+  padding: rem-calc(20px);
+  font-size: 200%;
+}
+
+.uk-article-title:not(:first-child) {
+  margin-top: rem-calc(50px);
+}
+
+.uk-article-lead {
+  border-left: 1px solid $conf-brand;
+  border-right: 1px solid $conf-brand;
+  padding-top: rem-calc(20px);
+  padding-left: rem-calc(20px);
+  padding-right: rem-calc(20px);
+}

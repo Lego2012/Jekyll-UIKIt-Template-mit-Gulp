@@ -1,0 +1,16 @@
+footer {
+  @include lm-section-border;
+  padding-top: em-calc(30px);
+  padding-bottom: em-calc(20px);
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  a {
+    color: lighten($conf-brand, 50%);
+    font-size: em-calc(18px);
+  }
+  h2 {
+    color: lighten($conf-brand, 55%);
+  }
+}

@@ -1,0 +1,430 @@
+.uk-container.uk-container-center
+  nav#items.uk-navbar(data-uk-sticky='')
+    label.uk-navbar-content Filter:
+    ul.uk-navbar-nav
+      li.uk-active(data-uk-filter='')
+        a(href='#') ALLE
+      li(data-uk-filter='blue')
+        a(href='#') BLAU
+      li(data-uk-filter='green')
+        a(href='#') GRÜN
+    label.uk-navbar-content Sortieren:
+    ul.uk-navbar-nav
+      li(data-uk-sort='numbers')
+        a(href='#')
+          | ZAHLEN
+          i.uk-icon-sort-numeric-asc
+      li(data-uk-sort='numbers:desc')
+        a(href='#')
+          | ZAHLEN
+          i.uk-icon-sort-numeric-desc
+      li(data-uk-sort='letters')
+        a(href='#')
+          | BUCHSTABEN
+          i.uk-icon-sort-alpha-asc
+      li(data-uk-sort='letters:desc')
+        a(href='#')
+          | BUCHSTABEN
+          i.uk-icon-sort-alpha-desc
+.uk-container.uk-container-center.uk-margin-top
+  .uk-grid-width-small-1-1.uk-grid-width-medium-1-4(data-uk-grid="{gutter: 20, controls: '#items', duration: 0}")
+    div(data-uk-filter='blue', data-numbers='4', data-letters='A')
+      figure.uk-thumbnail.uk-overlay.uk-overlay-hover
+        img.uk-overlay-fade(src='http://placehold.it/1200x800/1e90ff/fff&text=A+4')
+        .uk-overlay-panel.uk-flex.uk-flex-center.uk-flex-middle.uk-text-center
+          button.uk-button(data-uk-modal="{target:'#project-a4'}", type='button') MEHR SEHEN
+        figcaption.uk-thumbnail-caption Mein Projekt
+      #project-a4.uk-modal
+        .uk-modal-dialog
+          a.uk-modal-close.uk-close
+          .uk-modal-header
+            h2 Projekt A4
+          .uk-overflow-container
+            img(src='http://placehold.it/1200x800/1e90ff/fff&text=Projekt+A4')
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+    div(data-uk-filter='green', data-numbers='2', data-letters='C')
+      figure.uk-thumbnail.uk-thumbnail-expand.uk-overlay.uk-overlay-hover
+        img.uk-overlay-fade(src='http://placehold.it/1200x800/9acd32/fff&text=C+2')
+        .uk-overlay-panel.uk-overlay-scale.uk-flex.uk-flex-center.uk-flex-middle.uk-text-center
+          button.uk-button(data-uk-modal="{target:'#project-c2'}", type='button') MEHR SEHEN
+        figcaption.uk-thumbnail-caption Mein Projekt
+      #project-c2.uk-modal
+        .uk-modal-dialog
+          a.uk-modal-close.uk-close
+          .uk-modal-header
+            h2 Projekt C2
+          .uk-overflow-container
+            img(src='http://placehold.it/1200x800/1e90ff/fff&text=Projekt+C2')
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+    div(data-uk-filter='blue', data-numbers='3', data-letters='D')
+      figure.uk-thumbnail.uk-thumbnail-expand.uk-overlay.uk-overlay-hover
+        img.uk-overlay-fade(src='http://placehold.it/1200x800/1e90ff/fff&text=D+3')
+        .uk-overlay-panel.uk-overlay-scale.uk-flex.uk-flex-center.uk-flex-middle.uk-text-center
+          button.uk-button(data-uk-modal="{target:'#project-d3'}", type='button') MEHR SEHEN
+        figcaption.uk-thumbnail-caption Mein Projekt
+      #project-d3.uk-modal
+        .uk-modal-dialog
+          a.uk-modal-close.uk-close
+          .uk-modal-header
+            h2 Projekt D3
+          .uk-overflow-container
+            img(src='http://placehold.it/1200x800/1e90ff/fff&text=Projekt+D3')
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+    div(data-uk-filter='green', data-numbers='1', data-letters='B')
+      figure.uk-thumbnail.uk-thumbnail-expand.uk-overlay.uk-overlay-hover
+        img.uk-overlay-fade(src='http://placehold.it/1200x800/9acd32/fff&text=B+1')
+        .uk-overlay-panel.uk-overlay-scale.uk-flex.uk-flex-center.uk-flex-middle.uk-text-center
+          button.uk-button(data-uk-modal="{target:'#project-b1'}", type='button') MEHR SEHEN
+        figcaption.uk-thumbnail-caption Mein Projekt
+      #project-b1.uk-modal
+        .uk-modal-dialog
+          a.uk-modal-close.uk-close
+          .uk-modal-header
+            h2 Projekt B1
+          .uk-overflow-container
+            img(src='http://placehold.it/1200x800/1e90ff/fff&text=Projekt+B1')
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+    div(data-uk-filter='green', data-numbers='5', data-letters='G')
+      figure.uk-thumbnail.uk-thumbnail-expand.uk-overlay.uk-overlay-hover
+        img.uk-overlay-fade(src='http://placehold.it/1200x800/9acd32/fff&text=G+5')
+        .uk-overlay-panel.uk-overlay-scale.uk-flex.uk-flex-center.uk-flex-middle.uk-text-center
+          button.uk-button(data-uk-modal="{target:'#project-g5'}", type='button') MEHR SEHEN
+        figcaption.uk-thumbnail-caption Mein Projekt
+      #project-g5.uk-modal
+        .uk-modal-dialog
+          a.uk-modal-close.uk-close
+          .uk-modal-header
+            h2 Projekt G5
+          .uk-overflow-container
+            img(src='http://placehold.it/1200x800/1e90ff/fff&text=Projekt+G5')
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+    div(data-uk-filter='blue', data-numbers='6', data-letters='F')
+      figure.uk-thumbnail.uk-thumbnail-expand.uk-overlay.uk-overlay-hover
+        img.uk-overlay-fade(src='http://placehold.it/1200x800/1e90ff/fff&text=F+6')
+        .uk-overlay-panel.uk-overlay-scale.uk-flex.uk-flex-center.uk-flex-middle.uk-text-center
+          button.uk-button(data-uk-modal="{target:'#project-f6'}", type='button') MEHR SEHEN
+        figcaption.uk-thumbnail-caption Mein Projekt
+      #project-f6.uk-modal
+        .uk-modal-dialog
+          a.uk-modal-close.uk-close
+          .uk-modal-header
+            h2 Projekt F6
+          .uk-overflow-container
+            img(src='http://placehold.it/1200x800/1e90ff/fff&text=Projekt+F6')
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+    div(data-uk-filter='green', data-numbers='8', data-letters='E')
+      figure.uk-thumbnail.uk-thumbnail-expand.uk-overlay.uk-overlay-hover
+        img.uk-overlay-fade(src='http://placehold.it/1200x800/9acd32/fff&text=E+8')
+        .uk-overlay-panel.uk-overlay-scale.uk-flex.uk-flex-center.uk-flex-middle.uk-text-center
+          button.uk-button(data-uk-modal="{target:'#project-e8'}", type='button') MEHR SEHEN
+        figcaption.uk-thumbnail-caption Mein Projekt
+      #project-e8.uk-modal
+        .uk-modal-dialog
+          a.uk-modal-close.uk-close
+          .uk-modal-header
+            h2 Projekt E8
+          .uk-overflow-container
+            img(src='http://placehold.it/1200x800/1e90ff/fff&text=Projekt+E8')
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+    div(data-uk-filter='blue', data-numbers='7', data-letters='H')
+      figure.uk-thumbnail.uk-thumbnail-expand.uk-overlay.uk-overlay-hover
+        img.uk-overlay-fade(src='http://placehold.it/1200x800/1e90ff/fff&text=H+7')
+        .uk-overlay-panel.uk-overlay-scale.uk-flex.uk-flex-center.uk-flex-middle.uk-text-center
+          button.uk-button(data-uk-modal="{target:'#project-h7'}", type='button') MEHR SEHEN
+        figcaption.uk-thumbnail-caption Mein Projekt
+      #project-h7.uk-modal
+        .uk-modal-dialog
+          a.uk-modal-close.uk-close
+          .uk-modal-header
+            h2 Projekt H7
+          .uk-overflow-container
+            img(src='http://placehold.it/1200x800/1e90ff/fff&text=Projekt+H7')
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+    div(data-uk-filter='green', data-numbers='11', data-letters='L')
+      figure.uk-thumbnail.uk-thumbnail-expand.uk-overlay.uk-overlay-hover
+        img.uk-overlay-fade(src='http://placehold.it/1200x800/9acd32/fff&text=L+11')
+        .uk-overlay-panel.uk-overlay-scale.uk-flex.uk-flex-center.uk-flex-middle.uk-text-center
+          button.uk-button(data-uk-modal="{target:'#project-l11'}", type='button') MEHR SEHEN
+        figcaption.uk-thumbnail-caption Mein Projekt
+      #project-l11.uk-modal
+        .uk-modal-dialog
+          a.uk-modal-close.uk-close
+          .uk-modal-header
+            h2 Projekt L11
+          .uk-overflow-container
+            img(src='http://placehold.it/1200x800/1e90ff/fff&text=Projekt+L11')
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+    div(data-uk-filter='blue', data-numbers='9', data-letters='J')
+      figure.uk-thumbnail.uk-thumbnail-expand.uk-overlay.uk-overlay-hover
+        img.uk-overlay-fade(src='http://placehold.it/1200x800/1e90ff/fff&text=J+9')
+        .uk-overlay-panel.uk-overlay-scale.uk-flex.uk-flex-center.uk-flex-middle.uk-text-center
+          button.uk-button(data-uk-modal="{target:'#project-j9'}", type='button') MEHR SEHEN
+        figcaption.uk-thumbnail-caption Mein Projekt
+      #project-j9.uk-modal
+        .uk-modal-dialog
+          a.uk-modal-close.uk-close
+          .uk-modal-header
+            h2 Projekt J9
+          .uk-overflow-container
+            img(src='http://placehold.it/1200x800/1e90ff/fff&text=Projekt+J9')
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+    div(data-uk-filter='blue', data-numbers='12', data-letters='K')
+      figure.uk-thumbnail.uk-thumbnail-expand.uk-overlay.uk-overlay-hover
+        img.uk-overlay-fade(src='http://placehold.it/1200x800/1e90ff/fff&text=K+12')
+        .uk-overlay-panel.uk-overlay-scale.uk-flex.uk-flex-center.uk-flex-middle.uk-text-center
+          button.uk-button(data-uk-modal="{target:'#project-k12'}", type='button') MEHR SEHEN
+        figcaption.uk-thumbnail-caption Mein Projekt
+      #project-k12.uk-modal
+        .uk-modal-dialog
+          a.uk-modal-close.uk-close
+          .uk-modal-header
+            h2 Projekt K12
+          .uk-overflow-container
+            img(src='http://placehold.it/1200x800/1e90ff/fff&text=Projekt+K12')
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+    div(data-uk-filter='green', data-numbers='10', data-letters='I')
+      figure.uk-thumbnail.uk-thumbnail-expand.uk-overlay.uk-overlay-hover
+        img.uk-overlay-fade(src='http://placehold.it/1200x800/9acd32/fff&text=I+10')
+        .uk-overlay-panel.uk-overlay-scale.uk-flex.uk-flex-center.uk-flex-middle.uk-text-center
+          button.uk-button(data-uk-modal="{target:'#project-i10'}", type='button') MEHR SEHEN
+        figcaption.uk-thumbnail-caption Mein Projekt
+      #project-i10.uk-modal
+        .uk-modal-dialog
+          a.uk-modal-close.uk-close
+          .uk-modal-header
+            h2 Projekt I10
+          .uk-overflow-container
+            img(src='http://placehold.it/1200x800/1e90ff/fff&text=Projekt+I10')
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+    div(data-uk-filter='green', data-numbers='13', data-letters='N')
+      figure.uk-thumbnail.uk-thumbnail-expand.uk-overlay.uk-overlay-hover
+        img.uk-overlay-fade(src='http://placehold.it/1200x800/9acd32/fff&text=N+13')
+        .uk-overlay-panel.uk-overlay-scale.uk-flex.uk-flex-center.uk-flex-middle.uk-text-center
+          button.uk-button(data-uk-modal="{target:'#project-n13'}", type='button') MEHR SEHEN
+        figcaption.uk-thumbnail-caption Mein Projekt
+      #project-n13.uk-modal
+        .uk-modal-dialog
+          a.uk-modal-close.uk-close
+          .uk-modal-header
+            h2 Projekt N13
+          .uk-overflow-container
+            img(src='http://placehold.it/1200x800/1e90ff/fff&text=Projekt+N13')
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+    div(data-uk-filter='green', data-numbers='15', data-letters='O')
+      figure.uk-thumbnail.uk-thumbnail-expand.uk-overlay.uk-overlay-hover
+        img.uk-overlay-fade(src='http://placehold.it/1200x800/9acd32/fff&text=O+15')
+        .uk-overlay-panel.uk-overlay-scale.uk-flex.uk-flex-center.uk-flex-middle.uk-text-center
+          button.uk-button(data-uk-modal="{target:'#project-o15'}", type='button') MEHR SEHEN
+        figcaption.uk-thumbnail-caption Mein Projekt
+      #project-o15.uk-modal
+        .uk-modal-dialog
+          a.uk-modal-close.uk-close
+          .uk-modal-header
+            h2 Projekt O15
+          .uk-overflow-container
+            img(src='http://placehold.it/1200x800/1e90ff/fff&text=Projekt+O15')
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+    div(data-uk-filter='blue', data-numbers='14', data-letters='P')
+      figure.uk-thumbnail.uk-thumbnail-expand.uk-overlay.uk-overlay-hover
+        img.uk-overlay-fade(src='http://placehold.it/1200x800/1e90ff/fff&text=P+14')
+        .uk-overlay-panel.uk-overlay-scale.uk-flex.uk-flex-center.uk-flex-middle.uk-text-center
+          button.uk-button(data-uk-modal="{target:'#project-p14'}", type='button') MEHR SEHEN
+        figcaption.uk-thumbnail-caption Mein Projekt
+      #project-p14.uk-modal
+        .uk-modal-dialog
+          a.uk-modal-close.uk-close
+          .uk-modal-header
+            h2 Projekt P14
+          .uk-overflow-container
+            img(src='http://placehold.it/1200x800/1e90ff/fff&text=Projekt+P14')
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+    div(data-uk-filter='green', data-numbers='16', data-letters='M')
+      figure.uk-thumbnail.uk-thumbnail-expand.uk-overlay.uk-overlay-hover
+        img.uk-overlay-fade(src='http://placehold.it/1200x800/9acd32/fff&text=M+16')
+        .uk-overlay-panel.uk-overlay-scale.uk-flex.uk-flex-center.uk-flex-middle.uk-text-center
+          button.uk-button(data-uk-modal="{target:'#project-m16'}", type='button') MEHR SEHEN
+        figcaption.uk-thumbnail-caption Mein Projekt
+      #project-m16.uk-modal
+        .uk-modal-dialog
+          a.uk-modal-close.uk-close
+          .uk-modal-header
+            h2 Projekt M16
+          .uk-overflow-container
+            img(src='http://placehold.it/1200x800/1e90ff/fff&text=Projekt+M16')
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.
+            p
+              | Lorem ipsum dolor sit amet, mollis inciderint ei eam, esse senserit consequat eum at, at est bonorum omittam. Vel te corpora electram accommodare, no nisl ferri appetere est. Usu cu sale gubergren. Oratio detraxit sea id, ex quo adipisci repudiare laboramus. Dolor reprimique appellantur ei duo, eum at idque efficiantur. Cu ius ridens graeco doctus, inimicus postulant efficiantur pri te.
+              | Eam ea eligendi mnesarchum, mea dico mollis meliore no. Dico utamur duo eu. Ut brute suscipit patrioque ius. Ex recusabo postulant elaboraret mea, ei pri propriae patrioque similique, ad duo oratio facilisi definitionem. Eam ex alii populo causae, malis audire mediocritatem ut est.
+              | Est dictas vituperata ne. Ancillae consequat quo ea. His ea congue hendrerit vituperatoribus, eum cu alii esse dissentiet. Id his illum libris malorum. Ne vel tantas tamquam sententiae, veri possit mea et, cibo intellegam ne duo. Et duis quaeque usu. Per harum accusata eu, errem tantas definiebas nam no.
+              | Altera admodum eu mei, doming expetenda quo te, mucius putant duo ei. Est accusam efficiantur at. Has ipsum nusquam scribentur at, vis ridens impedit ut. At blandit singulis senserit ius. Et cum consul nusquam, dolor dictas dignissim pro et. Vix inani possim voluptatum ne. Ex eos convenire adversarium.
+              | Ius labore epicuri in. Nulla partem ut vix, vis cu vide noster oportere, putent philosophia vis te. Cu aperiam legimus definitiones mei, eros perfecto ex sit. An mel amet virtute lobortis. Latine ocurreret elaboraret id quo. Debet lobortis pri ut, at duo hinc menandri elaboraret, eum assum aeterno alienum in. Eum altera inermis interesset ea.

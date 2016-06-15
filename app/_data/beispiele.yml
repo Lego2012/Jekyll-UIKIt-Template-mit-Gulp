@@ -1,0 +1,26 @@
+###################################################################
+# Seitentiel
+###################################################################
+header-title: Beispiele mit Webseiten, <a href="/pages/internet-videos">Videos</a> und <a href="/pages/bildergalerie">Bildergalerie</a>
+header-subtitle:
+
+###################################################################
+# Sektion Beispiel 1
+###################################################################
+beispiel1-text1: Eine <a href="http://beispiel1.confidea.de">Webseite</a> für verschiedene Geschäftsbereiche in klassischem, modernem Design mit einem Bildwechsler am Kopf der Webseite.
+beispiel1-text2: Die Aufmerksamkeit des Besuchers wird sofort auf die Bilder und die Texte gelenkt. Auf dieser Webseite gibt es eine gute Mischung von Text und Bildern.
+beispiel1-text3: Auf der <a href="http://beispiel1.confidea.de">Webseite</a> finden Sie oben rechts diesen Link <img class="zurueck" src="/assets/images/zureck-zu-confidea.png" alt="">, der Sie wieder hierhin zurück bringt.
+
+###################################################################
+# Sektion Beispiel 2
+###################################################################
+beispiel2-text1: Eine sehr <a href="http://beispiel2.confidea.de">moderne responsive Webseite</a> für viele Anwendungsbereiche. Der große Kopfbereich mit einem Bild zieht die Aufmerksamkeit des Besuchers an und genau hier ist auch die zentrale Botschaft platziert.
+beispiel2-text2: Dieses Webdesign ist auf einen Blick sehr informativ und lädt den Besucher zum Erforschen ein.
+beispiel2-text3: Auf der <a href="http://beispiel2.confidea.de">Webseite</a> finden Sie oben rechts diesen Link <img class="zurueck" src="/assets/images/zureck-zu-confidea.png" alt="">, der Sie wieder hierhin zurück bringt.
+
+###################################################################
+# Sektion Beispiel 3
+###################################################################
+beispiel3-text1: Eine <a href="http://beispiel3.confidea.de">interessante Webseite</a>, die mal nicht über die gesamte Browserbreite geht, aber trotzdem responsiv ist und so auf allen Geräten optimal dargestellt wird.
+beispiel3-text2: Dieser Webseitenstil ist voll im Trend. Die Startseite ist sehr lang und beinhaltet schon fast alle Inhalte, die sonst auf mehrere einzelne Seiten verteilt sind. Der Besucher scrollt also immer nur nach unten, um die Inhalte nach und nach zu sehen. Sprungmarken helfen ihm, wieder an bestimmte Stellen der Webseite zurückzukommen.
+beispiel3-text3: Auf der <a href="http://beispiel3.confidea.de">Webseite</a> finden Sie oben rechts diesen Link <img class="zurueck" src="/assets/images/zureck-zu-confidea.png" alt="">, der Sie wieder hierhin zurück bringt.

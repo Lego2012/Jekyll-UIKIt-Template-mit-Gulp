@@ -1,0 +1,27 @@
+---
+---
+
+/* TEAM */
+	Web Designer: {{ site.webdesigner }}
+	Author: {{ site.owner.name }}
+	Kontakt: {{ site.owner.email }}
+	Twitter: {{ site.owner.twitter }}
+	Facebook: {{ site.owner.facebook }}
+	Skype: {{ site.owner.skype }}
+	Instagram: {{ site.owner.instagram }}
+	Dribble: {{ site.owner.dribble }}
+	Disqus: {{ site.owner.disqus }}
+	Site: {{ site.url }}
+	From: {{ site.owner.location }}
+
+/* THANKS */
+	{{ site.danke1.name }} ({{ site.danke1.what }})
+	{{ site.danke2.name }} ({{ site.danke1.what }})
+	{{ site.danke3.name }} ({{ site.danke1.what }})
+
+/* SITE */
+	Last update: {{ site.time | date: '%F' }}
+	Language: {{ site.language }}
+	Software: {{ site.tools.software }}
+	Standards: {{ site.tools.standards }}
+	Hosted on: {{ site.host }}

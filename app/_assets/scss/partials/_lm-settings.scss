@@ -1,0 +1,40 @@
+// Individuelle Einstellungen
+.lm-section-border {
+  border-top: 1px solid $conf-brand;
+  border-bottom: 1px solid $conf-brand;
+}
+
+.lm-container-small {
+  max-width: rem-calc(700px);
+  padding-left: rem-calc(20px);
+  padding-right: rem-calc(20px);
+}
+
+.lm-container-medium {
+  max-width: rem-calc(900px);
+  padding-left: rem-calc(20px);
+  padding-right: rem-calc(20px);
+}
+
+section {
+  padding-top: rem-calc(50px);
+  padding-bottom: rem-calc(50px);
+  @include bp(max,500px) {
+    padding-top: rem-calc(20px);
+    padding-bottom: rem-calc(20px);
+  }
+}
+
+.headline {
+  padding-top: 0 !important;
+}
+
+.box i {
+  padding-right: em-calc(10px);
+}
+
+aside.uebersicht {
+  border-top: 1px solid $conf-brand;
+  padding-top: em-calc(10px);
+  margin-bottom: rem-calc(50px);
+}

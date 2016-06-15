@@ -1,0 +1,95 @@
+title: confidea - Webdesign - Redesign - CMS - SEO
+sitename: confidea - neue kunden über das internet # Wird für SEO und Twitter genutzt
+title-divider: " @ "
+description: >
+  Confidea macht Webseiten, mit denen Sie neue Kunden über das Internet gewinnen. Von Confidea gemachte Webseiten sind sehr schnell, responsiv, sicher und für die Zukunft vorbereitet.
+keywords: Webdesign, Content Management Systeme, SEO, Jekyll, WordPress, TYPO3
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:9999"
+
+author: Leo Merkel
+
+image:
+  source: _assets/images/_fullsize
+  output: generated
+  presets:
+    users:
+      attr:
+        class: user-portrait
+        itemprop: image
+      width: 350
+    half:
+      width: 400
+      height: 400
+
+owner:
+  name: Leo Merkel
+  avatar: avatar.png
+  bio:
+  email: leo.merkel@confidea.de
+  disqus: # disqus shortname
+  location: Emmerthal, Germany
+
+twitter:
+  username: Lemgo2000
+github:
+  username: Lego2012
+skype:
+  username: Leofilm2005
+instagram:
+  username:
+facebook:
+  username:
+dribble:
+  username:
+google_site_verification:
+social:
+  name: # If the user or organization name differs from the site's name
+  links: # An array of links to social media profile
+
+# Zusätzliche Angaben für Humans.txt
+webdesigner: Leo Merkel
+danke1:
+  name: Vorname Nachname
+  what: Fotos
+danke2:
+  name: Vorname Nachname
+  what: Fotos
+danke3:
+  name: Vorname Nachname
+  what: Fotos
+language: German
+tools:
+  standards: "HTML5, CSS3, Jekyll, JavaScript"
+  software: "git, Atom, Gulp.js, npm"
+host: All-Inkl
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Berlin
+
+markdown: kramdown
+
+incremental: true
+
+source: ./app
+destination: ./build
+
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - mini_magick
+
+permalink: :title/
+
+paginate: 5
+paginate_path: "/page/:num/"
+
+# Gulp takes care of images and assets
+exclude: ['img', 'css', 'js', 'fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
+
+include: ['_pages', '.htaccess', 'robots.txt', 'humans.txt']
+
+# `_config.build.yml` sets `future` and `show_drafts` to `false`
+future: true
+show_drafts: false

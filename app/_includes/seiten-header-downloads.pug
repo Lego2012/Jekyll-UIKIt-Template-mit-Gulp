@@ -1,0 +1,17 @@
+| {% if page.headline %}
+.lm-header
+  hgroup.uk-container.uk-container-center.uk-text-center
+    h1  {{ page.headline }}
+    h2  {% if page.subline %}{{ page.subline }}{% endif %}
+| {% endif %}
+nav.lm-downloadbereich
+  ul
+    strong Sie befinden sich hier:
+    |     {% for node in site.data.download-nav %}
+    |     {% if page.url == node.url %}
+    a.active-download(href='{{ node.url }}') {{ node.title }}
+    |     {% else %}
+    li
+      a(href='{{ node.url }}') {{ node.title }}
+    |     {% endif %}
+    |     {% endfor %}

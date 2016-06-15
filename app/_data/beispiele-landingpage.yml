@@ -1,0 +1,31 @@
+###################################################################
+# Seitentiel
+###################################################################
+header-title: Beispiele für eine Landing Page
+
+###################################################################
+# Sektion Landingpage einsetzen
+###################################################################
+einsetzen-text1-1: Sie sollten auf jeden Fall eine Landing Page einsetzen, wenn Sie Kunden über das Internet gewinnen wollen.
+einsetzen-text1-2: Die Landing Page zeigt Ihrem Besucher komprimiert, was Sie zu bieten haben und fordert ihn auf, seine Emailadresse zu hinterlassen, um weitere Informationen zu bekommen.
+einsetzen-text1-3: Treten Sie mit Ihrem potentiellen Kunden in Kontakt und schicken Sie ihm regelmäßige Informationen über Neuigkeiten aus Ihrem Unternehmen. Das kann mit unseren Tools vollautomatisch gemacht werden - Sie müssen nicht einmal mehr den Newsletter selbst schreiben.
+
+###################################################################
+# Sektion Beispiele Landingpages
+###################################################################
+landingpages-title1: Hier sind ein paar Beispiele für erfolgreiche Landing Pages
+landingpages-text1-1: <img src="/assets/images/conversion/conversio-thumb-280x245.jpg" alt="Landingpage Conversio">
+landingpages-text1-2: <img src="/assets/images/conversion_desktop/conversion-desktop-thumb-280x245.jpg" alt="Landingpage Conversion Desktop">
+landingpages-text1-3: <img src="/assets/images/conversion_thumb/conversion-thumb-280x245.jpg" alt="Landingpage Conversion Thumb">
+landingpages-text1-4: <img src="/assets/images/just_landed/just-landed-thumb-280x245.jpg" alt="Landingpage Just Landed">
+landingpages-text1-5: <img src="/assets/images/lando/lando-thumb-280x245.png" alt="Landingpage Lando">
+landingpages-text1-6: <img src="/assets/images/minimalistic/minimalistic-thumb-280x245.png" alt="Landingpage Minimalistic">
+landingpages-text1-7: <img src="/assets/images/simple_download/simple-download-thumb-280x245.jpg" alt="Landingpage Simple Download">
+landingpages-text1-8: <img src="/assets/images/spoty/spoty-thumb-280x245.jpg" alt="Landingpage Spoty">
+
+###################################################################
+# Sektion Beispiel 3
+###################################################################
+beispiel3-text1: Eine <a href="http://beispiel3.confidea.de">interessante Webseite</a>, die mal nicht über die gesamte Browserbreite geht, aber trotzdem responsiv ist und so auf allen Geräten optimal dargestellt wird.
+beispiel3-text2: Dieser Webseitenstil ist voll im Trend. Die Startseite ist sehr lang und beinhaltet schon fast alle Inhalte, die sonst auf mehrere einzelne Seiten verteilt sind. Der Besucher scrollt also immer nur nach unten, um die Inhalte nach und nach zu sehen. Sprungmarken helfen ihm, wieder an bestimmte Stellen der Webseite zurückzukommen.
+beispiel3-text3: Auf der <a href="http://beispiel3.confidea.de">Webseite</a> finden Sie oben rechts diesen Link <img class="zurueck" src="/assets/images/zureck-zu-confidea.png" alt="">, der Sie wieder hierhin zurück bringt.

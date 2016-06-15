@@ -1,0 +1,61 @@
+---
+layout: null
+permalink: .htaccess
+---
+
+# Solving The Canonical Website Address to non-www-Version
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.confidea\.de$ [NC]
+RewriteRule ^(.*)$ http://confidea.de/$1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^.*/index.html
+RewriteRule ^(.*)index.html$ http://confidea.de/$1 [R=301,L]
+
+# How To Set The Browser Cache
+# 1 WEEK 1 DAY
+<filesMatch “.(jpg|jpeg|png|gif|swf|ico)$”>
+Header set Cache-Control “max-age=691200, public”
+</filesMatch>
+# 1 WEEK 1 DAY
+<filesMatch “.(xml|txt|js)$”>
+Header set Cache-Control “max-age=691200, proxy-revalidate”
+</filesMatch>
+# 1 WEEK 1 DAY
+<filesMatch “.(html|htm|css|php)$”>
+Header set Cache-Control “max-age=691200, private, proxy-revalidate”
+</filesMatch>
+
+# HTACCES Security
+<Files ~ “^.*\.([Hh][Tt][Aa])”>
+order allow,deny
+deny from all
+satisfy all
+</Files>
+
+# Custom 404 Error Pages
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+RewriteCond %{HTTP_ACCEPT} image/webp
+RewriteCond %{DOCUMENT_ROOT}/$1.webp -f
+RewriteRule (.+)\.(jpe?g|png)$ $1.webp [T=image/webp,E=accept:1]
+
+AddType image/webp .webp
+
+# 301 Redirect
+RewriteEngine On
+Redirect 301 http://confidea.de/startseite-2/responsives-design/ http://confidea.de/responsives-design/
+Redirect 301 http://confidea.de/startseite-2/service-und-support/ http://confidea.de/service-und-support/
+Redirect 301 http://confidea.de/footer/kontakt/ http://confidea.de/kontakt/
+Redirect 301 http://confidea.de/startseite-2/webdesign-responsive-webseite/ http://confidea.de/webdesign-responsive-webseite/
+Redirect 301 http://confidea.de/neues-webdesign/ http://confidea.de/blog/
+Redirect 301 http://confidea.de/startseite-2/schulung-und-training/ http://confidea.de/schulung-und-training/
+Redirect 301 http://confidea.de/startseite-2/seo-suchmaschinen-optimierung/ http://confidea.de/seo-suchmaschinen-optimierung/
+Redirect 301 http://confidea.de/downloads/die-webseiten-formel/ http://confidea.de/die-webseiten-formel/
+Redirect 301 http://confidea.de/downloads/seo-checkliste/ http://confidea.de/die-seo-checkliste/
+Redirect 301 http://confidea.de/downloads/web-redesign-checkliste/ http://confidea.de/die-web-redesign-checkliste/
+Redirect 301 http://confidea.de/downloads/fragen-und-antworten/ http://confidea.de/fragen/
+Redirect 301 http://confidea.de/allgemeine-geschaeftsbedingungen/ http://confidea.de/agb/
+Redirect 301 http://confidea.de/footer/impressum/ http://confidea.de/impressum/
+Redirect 301 http://confidea.de/footer/datenschutz/ http://confidea.de/datenschutz/
+Redirect 301 http://confidea.de/footer/sitemap/ http://confidea.de/
+Redirect 301 http://confidea.de/beispiele-webdesign/beispiele-fuer-landing-page/ http://confidea.de/beispiele-fuer-landingpages/

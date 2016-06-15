@@ -1,0 +1,124 @@
+---
+layout: null
+permalink: .htaccess
+---
+
+# Redirect all users to access the site WITHOUT the www. prefix
+RewriteEngine on
+rewritecond %{http_host} ^www.{{ site.url | remove: 'http://' }} [nc]
+rewriterule ^(.*)$ {{ site.url }}/$1 [r=301,nc]
+
+# Disable directory listing from this point
+Options -Indexes -Multiviews
+
+# properly handle requests coming from behind proxies
+<IfModule mod_headers.c>
+  Header append Vary User-Agent
+</IfModule>
+
+# Properly handle old browsers that do not support compression
+<IfModule mod_deflate.c>
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+  # Explicitly exclude binary files from compression just in case
+  SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|pdf|swf|ico|zip|ttf|eot|svg)$ no-gzip
+</IfModule>
+<ifmodule mod_deflate.c="">
+  <filesmatch ".(js|css)$"="">
+  SetOutputFilter DEFLATE
+  </filesmatch>
+</ifmodule>
+
+# Don't cache HTML or PHP
+<filesMatch ".(html|php)$">
+  FileETag None
+  <ifModule mod_headers.c>
+    Header unset ETag
+    Header set Cache-Control "max-age=0, private, no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "Sat, 16 Dec 1989 05:00:00 GMT"
+  </ifModule>
+</filesMatch>
+
+# Prevent viewing of htaccess file
+<Files ~ "^\.ht">
+  order allow,deny
+  deny from all
+  satisfy all
+</Files>
+
+#stop hotlinking
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www.)?{{ site.url | remove: 'http://' }}/.*$ [NC] RewriteRule .(gif|jpg|swf|flv|png)$ {{ site.url }}/hotlinking.gif [R=302,L]
+
+# Error Pages
+ErrorDocument 404 /404.html
+
+# Cache Certain file types, saving bandwidth and decreasing load times
+# 1 YEAR
+<filesMatch ".(ico|rar|zip|jpg|jpeg|png|gif)$">
+  Header set Cache-Control "max-age=29030400, public"
+</filesMatch>
+
+# 1 WEEK
+<filesMatch ".(js|css|pdf)$">
+Header set Cache-Control "max-age=29030400, public"
+</filesMatch>
+
+# Force all PDF files to download
+# Requires Apache Header Module - this will work for any file extensions
+<FilesMatch "\.(?i:pdf)$">
+  ForceType application/octet-stream
+  Header set Content-Disposition attachment
+</FilesMatch>
+
+# turns cache on for 1 month
+<IfModule mod_expires.c>
+ ExpiresActive On
+ ExpiresByType text/css "access plus 1 month"
+ ExpiresByType text/javascript "access plus 1 month"
+ ExpiresByType text/html "access plus 1 month"
+ ExpiresByType application/javascript "access plus 1 month"
+ ExpiresByType image/gif "access plus 1 month"
+ ExpiresByType image/jpeg "access plus 1 month"
+ ExpiresByType image/png "access plus 1 month"
+ ExpiresByType image/x-icon "access plus 1 month"
+</IfModule>
+<ifmodule mod_headers.c>
+ <filesmatch "\\.(ico|jpe?g|png|gif|swf)$">
+  Header set Cache-Control "max-age=2592000, public"
+ </filesmatch>
+ <filesmatch "\\.(css)$">
+  Header set Cache-Control "max-age=604800, public"
+ </filesmatch>
+ <filesmatch "\\.(js)$">
+  Header set Cache-Control "max-age=216000, private"
+ </filesmatch>
+</ifmodule>
+
+# Deflate Compression by MimeType
+<IfModule mod_deflate.c>
+ <FilesMatch "\.(js|jpg|jpeg|gif|png|css)$">
+  ExpiresActive on
+  ExpiresDefault "access plus 1 month"
+  SetOutputFilter DEFLATE
+ </FilesMatch>
+</IfModule>
+
+Redirect /startseite-2/responsives-design/ http://confidea.de/responsives-design/
+Redirect /startseite-2/service-und-support/ http://confidea.de/service-und-support/
+Redirect /footer/kontakt/ http://confidea.de/kontakt/
+Redirect /startseite-2/webdesign-responsive-webseite/ http://confidea.de/webdesign-responsive-webseite/
+Redirect /neues-webdesign/ http://confidea.de/blog/
+Redirect /startseite-2/schulung-und-training/ http://confidea.de/schulung-und-training/
+Redirect /startseite-2/seo-suchmaschinen-optimierung/ http://confidea.de/seo-suchmaschinen-optimierung/
+Redirect /downloads/die-webseiten-formel/ http://confidea.de/die-webseiten-formel/
+Redirect /downloads/seo-checkliste/ http://confidea.de/die-seo-checkliste/
+Redirect /downloads/web-redesign-checkliste/ http://confidea.de/die-web-redesign-checkliste/
+Redirect /downloads/fragen-und-antworten/ http://confidea.de/fragen/
+Redirect /allgemeine-geschaeftsbedingungen/ http://confidea.de/agb/
+Redirect /footer/impressum/ http://confidea.de/impressum/
+Redirect /footer/datenschutz/ http://confidea.de/datenschutz/
+Redirect /footer/sitemap/ http://confidea.de/
+Redirect /beispiele-webdesign/beispiele-fuer-landing-page/ http://confidea.de/beispiele-fuer-landingpages/

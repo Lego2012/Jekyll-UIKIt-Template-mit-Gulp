@@ -1,0 +1,13 @@
+nav.lm-downloadbereich
+  ul
+    span Sie befinden sich im Downloadbereich:
+    |     {% for node in site.data.download-nav %}
+    |     {% if page.url == node.url %}
+    li.active-download.page-link
+      i.icon.uk-icon-list-ol
+      a.active-download(href='{{ node.url }}') {{ node.title }}
+    |     {% else %}
+    li.page-link
+      a(href='{{ node.url }}') {{ node.title }}
+    |     {% endif %}
+    |     {% endfor %}

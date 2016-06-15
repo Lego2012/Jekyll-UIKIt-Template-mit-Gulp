@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<section class="post-headline">
+  <header class="lm-header">
+    <hgroup class="uk-container uk-container-center uk-text-center">
+        <h1> {{ page.headline }}</h1>
+      </hgroup>
+  </header>
+</section>
+
+<section class="uk-container uk-container-center">
+  <h2 class="post-title">{{ page.title }}</h2>
+
+  {% include date_post.html postclass='date-post' %}
+
+  <p>{% if page.author %}{{ page.author }}{% endif %}</p>
+
+  <p>{% if page.meta %}{{ page.meta }}{% endif %}</p>
+
+  <article>
+    {{ content }}
+  </article>
+
+  <aside class="uebersicht uk-h2">
+    <a href="/blog">Zurück zur Übersicht</a>
+  </aside>
+</section>

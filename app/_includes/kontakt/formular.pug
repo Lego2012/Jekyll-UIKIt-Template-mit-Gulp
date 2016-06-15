@@ -1,0 +1,24 @@
+div(role='form')
+  form(action='', method='post', novalidate='novalidate')
+    p
+      | Name (Pflichtfeld)
+      br
+      span.your-name
+        input(type='text', name='your-name', value='', size='40', aria-required='true', aria-invalid='false', placeholder='Ihr Vorname und Name')
+    p
+      | E-Mail (Pflichtfeld)
+      br
+      span.your-email
+        input(type='email', name='your-email', value='', size='40', aria-required='true', aria-invalid='false', placeholder='Ihre Emailadresse')
+    p
+      | Betreff
+      br
+      span.your-subject
+        input(type='text', name='your-subject', value='', size='40', aria-invalid='false', placeholder='Worum es geht')
+    p
+      | Ihre Nachricht
+      br
+      span.your-message
+        textarea(name='your-message', cols='40', rows='10', aria-invalid='false', placeholder='Wäre schön, wenn Sie hier etwas reinschreiben')
+    p
+      input.submit(type='submit', value='Senden')

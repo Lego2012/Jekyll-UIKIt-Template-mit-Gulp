@@ -1,0 +1,40 @@
+
+<footer class="lm-color-footer">
+  <div class="uk-container uk-container-center">
+    <div class="uk-grid">
+      <div class="uk-width-medium-6-10">
+        <h2 class="uk-h3">Aktuelle Beiträge</h2>
+        <ul>{% include blog-single.html %}</ul>
+      </div>
+      <div class="uk-width-medium-2-10">
+        <h2 class="uk-h3">Die Links der Webseite</h2>
+        <nav>
+          <ul>
+            {% for node in site.data.nav %}
+            {% if page.url == node.url %}
+            <li class="active page-link"><a class="active" href="{{ node.url }}">{{ node.title }}</a></li>            {% else %}
+            <li class="page-link"><a href="{{ node.url }}">{{ node.title }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+          </ul>
+        </nav>
+      </div>
+      <div class="uk-width-medium-2-10">
+        <h2 class="uk-h3">Wichtige Links</h2>
+        <nav>
+          <ul>
+            {% for node in site.data.nav-footer %}
+            {% if page.url == node.url %}
+            <li class="active page-link"><a class="active" href="{{ node.url }}">{{ node.title }}</a></li>            {% else %}
+            <li class="page-link"><a href="{{ node.url }}">{{ node.title }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+          </ul><a class="uk-button" id="my-id" data-uk-smooth-scroll="data-uk-smooth-scroll">Nach oben</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="uk-container uk-container-center uk-text-center">
+  <p class="copyright">© {{ site.time | date: '%Y' }}&nbsp;<a href="{{ site.url }}">{{ site.title }}, Buchhorststraße 13, 31860 Emmerthal, Mobil: 0176 - 248 248 48, Tel: 05286 - 990 922</a></p>
+</div>

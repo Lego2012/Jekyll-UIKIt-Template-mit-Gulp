@@ -1,0 +1,12 @@
+
+<section>
+  <nav class="lm-downloadbereich">
+    <ul><strong>Sie sind bei den Downloads auf der Unterseite:</strong>
+          {% for node in site.data.download-nav %}
+          {% if page.url == node.url %}<a class="active-download" href="{{ node.url }}">{{ node.title }}</a>    {% else %}
+      <li><a href="{{ node.url }}">{{ node.title }}</a></li>
+          {% endif %}
+          {% endfor %}
+    </ul>
+  </nav>
+</section>

@@ -1,0 +1,24 @@
+.lm-dienstleistungen {
+  min-height: rem-calc(200px);
+  > div {
+    padding-top: em-calc(90px);
+    > a {
+      border-radius: em-calc(10px);
+      color: lighten($conf-brand, 50%);
+      background-color: $conf-transparent;
+      padding: em-calc(10px);
+      @include bp(small) {
+        font-size: 150%;
+      }
+    }
+  }
+}
+
+.section2 {
+  p {
+    @include bp(small) {
+      border-bottom: 1px solid $conf-brand;
+      padding-bottom: 10px;
+    }
+  }
+}

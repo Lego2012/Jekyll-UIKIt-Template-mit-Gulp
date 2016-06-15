@@ -1,0 +1,16 @@
+| {% if page.author %}
+| {% assign author = site.data.authors[page.author] %}
+| {% else %}
+| {% assign author = site.owner %}
+| {% endif %}
+.author-image
+  img(src='{{ site.url }}/images/{{ author.avatar }}', alt='{{ author.name }}')
+
+.author-content
+  h3.author-name
+    | Geschrieben von {% if author.web %}
+    a(href='{{ author.web }}', itemprop='author') {{ author.name }}
+    | {% else %}
+    span(itemprop='author') {{ author.name }}
+    | {% endif %}
+  p.author-bio {{ author.bio }}

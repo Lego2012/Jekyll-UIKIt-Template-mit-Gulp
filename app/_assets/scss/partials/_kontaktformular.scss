@@ -1,0 +1,35 @@
+.kontaktformular {
+  // border-radius: em-calc(20px);
+  // border: 5px dashed $conf-brand;
+  padding-top: em-calc(20px);
+  padding-bottom: em-calc(20px);
+  .fa {
+    margin-right: rem-calc(10px);
+  }
+  img {
+    float: right;
+    margin-top: -2px;
+  }
+  span {
+    @include bp(small) {
+      font-size: 16px;
+    }
+  }
+}
+
+.kontaktformular-section {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.kontaktseite .kontaktformular-section {
+  padding-top: em-calc(20px);
+  padding-bottom: em-calc(20px);
+  background-color: lighten($conf-brand, 50%);
+}
+
+.email-leo {
+  @include bp(small) {
+    font-size: 16px;
+  }
+}
