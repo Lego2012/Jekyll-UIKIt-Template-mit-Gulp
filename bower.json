@@ -1,5 +1,5 @@
 {
-  "name": "confidea-dev",
+  "name": "confidea-template",
   "private": true,
   "dependencies": {
     "jquery": "~2.1.1",

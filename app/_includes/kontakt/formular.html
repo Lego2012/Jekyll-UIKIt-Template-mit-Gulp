@@ -1,16 +1,19 @@
 
-<div role="form">
-  <form action="" method="post" novalidate="novalidate">
+<div class="uk-width-medium-1-3" role="form">
+  <!-- http://flipmail.co/setup-->
+  <form id="contactform" method="post" action="//flipmail.co/api/{{ site.owner.flipmail }}">
     <p>Name (Pflichtfeld)<br/><span class="your-name">
-        <input type="text" name="your-name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Ihr Vorname und Name"/></span></p>
+        <input type="hidden" name="_valid[name]" value="required"/>
+        <input type="text" name="name" size="40" aria-required="true" aria-invalid="false" placeholder="Ihr Name"/></span></p>
     <p>E-Mail (Pflichtfeld)<br/><span class="your-email">
-        <input type="email" name="your-email" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Ihre Emailadresse"/></span></p>
-    <p>Betreff<br/><span class="your-subject">
-        <input type="text" name="your-subject" value="" size="40" aria-invalid="false" placeholder="Worum es geht"/></span></p>
+        <input type="hidden" name="_valid[email]" value="required|valid_email"/>
+        <input type="email" name="email" size="40" aria-required="true" aria-invalid="false" placeholder="Ihre Emailadresse"/></span></p>
     <p>Ihre Nachricht<br/><span class="your-message">
-        <textarea name="your-message" cols="40" rows="10" aria-invalid="false" placeholder="Wäre schön, wenn Sie hier etwas reinschreiben"></textarea></span></p>
+        <input type="hidden" name="_valid[message]" value="required"/>
+        <textarea name="message" cols="40" rows="21" aria-invalid="false" placeholder="Wäre schön, wenn Sie hier etwas reinschreiben"></textarea></span></p>
     <p>
-      <input class="submit" type="submit" value="Senden"/>
+      <button class="uk-button" type="submit">Abschicken</button>
     </p>
+    <input type="hidden" name="_after" value="{{ site.url }}/danke"/>
   </form>
 </div>

@@ -2,19 +2,17 @@
 layout: default
 ---
 
-<section>
+<section class="headline">
   {% if page.headline %}
   <header class="lm-header">
     <hgroup class="uk-container uk-container-center uk-text-center">
-      <h1> {{ page.headline }}</h1>
-      <h2> {% if page.subline %}{{ page.subline }}{% endif %}</h2>
-    </hgroup>
+        <h1> {{ page.headline }}</h1>
+        <h2> {% if page.subline %}{{ page.subline }}{% endif %}</h2>
+      </hgroup>
   </header>
   {% endif %}
 </section>
 
-<section>
-  <article>
-    {{ content }}
-  </article>
+<section class="lm-content">
+  {{ content }}
 </section>

@@ -10,6 +10,6 @@ gulp.task('watch', ['browsersync'], function() {
   gulp.watch('app/_includes/**/*.pug',  ['pug']);
   gulp.watch(config.scriptsHead,        ['scriptsHead', 'jshint']);
   gulp.watch(config.scriptsFoot,        ['scriptsFoot', 'jshint']);
-  gulp.watch(config.images,             ['images']);
+  gulp.watch(config.images,             ['images:development']);
   gulp.watch(config.sprites,            ['sprites']);
 });

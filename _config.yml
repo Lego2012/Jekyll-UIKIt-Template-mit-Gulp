@@ -17,7 +17,12 @@ owner:
   email: email@domain.tld
   disqus: # disqus shortname
   location: Ort, Land
-  ga: UA-59354571-1 # Google Analytics ID
+  ga: UA-12345678-1 # Google Analytics ID
+  mobile: +49 176 123 456 78
+  phone: +49 5555 1234567
+  flipmail: # http://flipmail.co/setup
+  email-encrypted: # https://www.onsite.org/html/antispam_email.html
+  logo: logo.png
 
 twitter:
   username:
