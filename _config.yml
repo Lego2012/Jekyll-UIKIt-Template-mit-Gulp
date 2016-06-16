@@ -1,42 +1,83 @@
+#
+# Diese Datei enthält notwendige Einstellungen für die Anpassungen der Webseite
+#
+
+# Titel der Webseite
 title: Dies ist der Webseitentitel
-sitename: Dies ist der Webseitenname # Wird für SEO und Twitter genutzt
+
+# Name der Webseite, 3ird für SEO und Twitter genutzt
+sitename: Dies ist der Webseitenname
+
+# Trenner für Seitentitel und Webseitentitel
 title-divider: " @ "
+
+# Kurze Beschreibung des Webseiteninhalts
 description: >
   Hier steht die Beschreibung, die lt. SEO nicht mehr als 156 Zeichen (inkl. Leerzeichen) haben soll
-keywords: keyword1, keyword2, keyword3, keyword4, keyword5, keyword6, keyword7 # Nicht mehr als 7 Keywords
 
-baseurl: "" # das Verzeichnis der Webseite, z. B. /blog/
+# Nicht mehr als 7 gut ausgewählte Schlüsselwörter benutzen. Idealerweise sollten die seitenrelevanten Schlüsselworte im Front Matter der jeweiligen Seite aufgeführt werden
+keywords: keyword1, keyword2, keyword3, keyword4, keyword5, keyword6, keyword7
+
+# Das Verzeichnis der Webseite, z. B. /blog/
+baseurl: ""
+
+# Die URL der Webseite
 url: "http://localhost:9999"
 
+markdown: kramdown
+
+incremental: true
+
+source: ./app
+destination: ./build
+
+# Wenn Collections genutzt werden sollen, müssen sie hier aufgeführt werden. Eine gute Anleitung gibt es hier: http://jxf.me/entries/custom-collections-jekyll/
+collections:
+  authors:
+
+# Der Name des generellen Autors. Dieser Wert kann im Front Matter jeder Seite überschrieben werden
 author: Vorname Nachname
 
+# Personenbezogene Angaben
 owner:
   name: Vorname Nachname
+  # Falls es einen Avatar gibt, wird der im Verzeichnis `app/_assets/images` gespeichert
   avatar: avatar.png
   bio:
-  email: email@domain.tld
-  disqus: # disqus shortname
   location: Ort, Land
-  ga: UA-12345678-1 # Google Analytics ID
   mobile: +49 176 123 456 78
   phone: +49 5555 1234567
-  flipmail: # http://flipmail.co/setup
-  email-encrypted: # https://www.onsite.org/html/antispam_email.html
+  # Einstellungen für das Kontaktformular. Es wird eine individuelle ID von Flipmail benötigt flipmail: http://flipmail.co/setup
+  # Für das Verschlüsseln der Webseite: https://www.onsite.org/html/antispam_email.html
+  email-encrypted:
+  # Das Logo wird im Verzeichnis `app/_assets/images` gespeichert
   logo: logo.png
+  # Bei Eintrag der Webseite in die Google Webmaster Tools wird eine HTML-Datei generiert, die sicherstellt, dass der Webseitenbetreiber identifiziert wurde
+  google_site_verification:
 
-twitter:
-  username:
-github:
-  username:
-skype:
-  username:
-instagram:
-  username:
-facebook:
-  username:
-dribble:
-  username:
-google_site_verification:
+# Dein Disqus-Kurname (nicht Dein Benutzername), um Kommentare der Beiträge zu aktivieren
+# Deinen Kurznamen findest Du in den Einstellungen Deines Disqus-Kontos
+disqus:
+
+# Eingabe Deines Google Analytics Web Tracking Code (z.B. UA-2110908-2) um Trackin zu aktivieren
+google_analytics:
+
+social-links:
+  dribbble:
+  email: email@domain.tld
+  facebook:
+  flickr:
+  github:
+  instagram:
+  linkedin:
+  pinterest:
+  rss:
+  twitter:
+  # channel/<your_long_string> oder user/<user-name>
+  youtube:
+  # Irgendwas, das im Profilnamen nach plus.google.com/ vorkommt
+  googleplus:
+
 social:
   name: # Falls der Benutzer oder die Organisation von dem Seitennamen abweichen sollte
   links: # Eine Reihe von Links zu den Profilen der sozialen Medien
@@ -60,12 +101,15 @@ host: Hostername
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone: Europe/Berlin
 
-markdown: kramdown
 
-incremental: true
+#
+# Diese Einstellungen müssen nicht geändert werden
+#
 
-source: ./app
-destination: ./build
+permalink: :title/
+
+paginate: 5
+paginate_path: "/page/:num/"
 
 gems:
   - jekyll-sitemap
@@ -73,20 +117,28 @@ gems:
   - jekyll-seo-tag
   - i18n
 
-permalink: :title/
-
-paginate: 5
-paginate_path: "/page/:num/"
-
 # Gulp kümmert sich um Bilder und Assets
-exclude: ['img', 'css', 'js', 'fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
+exclude:
+  - img
+  - css
+  - js
+  - fonts
+  - '**.png'
+  - '**.jpg'
+  - '**.jpeg'
+  - '**.gif'
+  - '**.webp'
+  - '**.svg'
+  - '**.ico'
 
 # Hier wird u. a. das Pages-Verzeichnis eingebunden
-include: ['_pages', '_authors', '.htaccess', 'robots.txt', 'humans.txt']
+include:
+  - _pages
+  - _authors
+  - .htaccess
+  - robots.txt
+  - humans.txt
 
 # `_config.build.yml` setzt `future` und `show_drafts` auf `false`
 future: true
 show_drafts: true
-
-collections:
-  - authors
