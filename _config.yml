@@ -5,9 +5,6 @@
 # Titel der Webseite
 title: Dies ist der Webseitentitel
 
-# Name der Webseite, 3ird für SEO und Twitter genutzt
-sitename: Dies ist der Webseitenname
-
 # Trenner für Seitentitel und Webseitentitel
 title-divider: " @ "
 
@@ -59,7 +56,7 @@ owner:
 # Deinen Kurznamen findest Du in den Einstellungen Deines Disqus-Kontos
 disqus:
 
-# Eingabe Deines Google Analytics Web Tracking Code (z.B. UA-2110908-2) um Trackin zu aktivieren
+# Eingabe Deines Google Analytics Web Tracking Code (z.B. UA-2110908-2) um Tracking zu aktivieren
 google_analytics:
 
 social-links:
