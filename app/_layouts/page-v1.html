@@ -2,6 +2,10 @@
 layout: default
 ---
 
+{% comment %}
+	Es gibt 2 Versionen des Page-Template: V1 (diese Version) hat kein Hintergrundbild und V2 hat ein Hintergrundbild. Aber nur dann, wenn es im Front Matter der Seite mit "image:" und dem Bild enthalten ist.
+{% endcomment %}
+
 <section class="headline">
   {% if page.headline %}
   <header class="lm-header">

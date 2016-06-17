@@ -30,3 +30,13 @@ $ gulp deploy
 - `gulp publish` kopiert und optimiert die Assets und startet ein Production-Build von Jekyll.
 - `gulp publish-test` ist derselbe Prozess ohne die zeitaufwändige Bildoptimierung
 - `gulp deploy` transferiert die generierten Dateien mit Rsync auf den Server.
+
+## Rake starten
+
+In dem `Rakefile.rb` ist ein Task enthalten, um die Suchmaschinen von Änderungen an der Webseite zu informieren. Dieser Task wird so aufgerufen:
+
+```sh
+$ rake notify
+```
+
+Die Platzhalter `my-website.com` müssen natürlich durch die eigene Domain ersetzt werden.

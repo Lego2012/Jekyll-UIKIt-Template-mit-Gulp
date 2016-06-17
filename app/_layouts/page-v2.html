@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+{% comment %}
+	Es gibt 2 Versionen des Page-Template: V2 (diese Version) hat ein Hintergrundbild. Aber nur dann, wenn es im Front Matter der Seite mit "image:" und dem Bild enthalten ist.
+
+  V1 hat kein Hintergrundbild. Als Klasse kann auch "uk-cover-background" eingesetzt werden.
+{% endcomment %}
+
+{% if page.image %}
+  <section class="headline header-image">
+    <style type="text/css">
+      .header-image {
+        background: url("{{ page.image }}");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      h1, h2 {
+        color: white;
+      }
+    </style>
+
+    {% if page.headline %}
+    <header class="lm-header">
+      <hgroup class="uk-container uk-container-center uk-text-center">
+          <h1> {{ page.headline }}</h1>
+          <h2> {% if page.subline %}{{ page.subline }}{% endif %}</h2>
+        </hgroup>
+    </header>
+    {% endif %}
+  </section>
+{% else %}
+  <section class="headline">
+    {% if page.headline %}
+    <header class="lm-header">
+      <hgroup class="uk-container uk-container-center uk-text-center">
+          <h1> {{ page.headline }}</h1>
+          <h2> {% if page.subline %}{{ page.subline }}{% endif %}</h2>
+        </hgroup>
+    </header>
+    {% endif %}
+  </section>
+{% endif %}
+
+<section class="lm-content">
+  {{ content }}
+</section>
