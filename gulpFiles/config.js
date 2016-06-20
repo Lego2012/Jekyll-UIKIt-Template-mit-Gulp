@@ -38,7 +38,7 @@ module.exports = {
     src: [development, developmentAssets + '/css', developmentAssets + '/js']
   },
   pug: {
-    src: src + '/_includes/**/*.pug',
+    src: src + '/_includes/pugfiles/*.pug',
     dest: src + '/_includes',
     options: {
       pretty: true
