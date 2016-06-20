@@ -15,8 +15,8 @@ var config       = require('../../config').sass;
       .pipe(sourcemaps.init())
       .pipe(autoprefixer(config.autoprefixer))
       .pipe(sass({includePaths: [
-         'app/_assets/scss/partials',
-         'app/_assets/scss/vendor',
+         'app/_assets/stylesheets/partials',
+         'app/_assets/stylesheets/vendor',
          'bower_components/uikit/scss',
          'bower_components/uikit/scss/components/',
          'bower_components/juice/dist'

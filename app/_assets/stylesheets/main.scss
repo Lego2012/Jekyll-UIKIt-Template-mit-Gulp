@@ -1,0 +1,48 @@
+/* Die Pfade in `stylesheets` wurden im Sass-Task bereits festgelegt.
+* Darum kann hier ohne Angabe der Ordner direkt importiert werden. */
+
+/* Die UIKit Imports speziell für Sass */
+@import "uikit-mixins";
+@import "uikit-variables";
+
+/* Die eigenen Variablen und Mixins: */
+@import "eigene_variable";
+@import "eigene_mixins";
+
+/* UIKit selbst und Komponenten */
+@import "uikit";
+
+/* Die UIKit-Variablen können hier eingesehen werden: */
+/* app/_bower_components/uikit/scss/uikit-variables.scss */
+/* app/_bower_components/uikit/scss/core/variables.scss */
+
+/* Hier werden die UIKit-CSS-Komponenten importiert */
+@import "autocomplete";
+@import "accordion";
+
+/* Imports aus Bower-Components und dem Ordner `vendor` */
+/* http://kylebrumm.com/juice/ */
+@import "juice";
+
+/* https://daneden.github.io/animate.css/ */
+@import "animate";
+
+/* http://imagehover.io/docs */
+@import "imagehover-extended.min";
+
+/* Eigene Imports aus dem Ordner `partials`*/
+@import "baseStyles";
+@import "lm_settings";
+@import "layout";
+@import "navbar";
+@import "buttons";
+@import "lm_colors";
+@import "kontaktformular";
+@import "accordion";
+@import "footer";
+@import "tabs";
+@import "article";
+@import "startseite";
+@import "ueber_uns";
+
+@import "svg-icons";

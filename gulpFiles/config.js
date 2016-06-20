@@ -67,7 +67,7 @@ module.exports = {
     }
   },
   sass: {
-    src:  srcAssets + '/scss/**/*.{sass,scss}',
+    src:  srcAssets + '/stylesheets/**/*.{sass,scss}',
     dest: developmentAssets + '/css'
   },
   concatHead: {
@@ -134,7 +134,7 @@ module.exports = {
       src + '/_pages/**/*.{html,markdown,md}',
       src + '/*.{html,markdown,md,yml,json,txt,xml}'
     ],
-    sass:    srcAssets + '/scss/**/*.{sass,scss}',
+    sass:    srcAssets + '/stylesheets/**/*.{sass,scss}',
     scripts: srcAssets + '/javascripts/**/*.js',
     images:  srcAssets + '/images/**/*',
     svg:     'vectors/*.svg'
