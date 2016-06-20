@@ -8,8 +8,7 @@ gulp.task('watch', ['browsersync'], function() {
   gulp.watch(config.jekyll,             ['jekyll-rebuild']);
   gulp.watch(config.sass,               ['sass']);
   gulp.watch('app/_includes/**/*.pug',  ['pug']);
-  gulp.watch(config.scriptsHead,        ['scriptsHead', 'jshint']);
-  gulp.watch(config.scriptsFoot,        ['scriptsFoot', 'jshint']);
+  gulp.watch(config.scriptsHead,        ['scriptsHead']);
+  gulp.watch(config.scriptsFoot,        ['scriptsFoot']);
   gulp.watch(config.images,             ['images:development']);
-  gulp.watch(config.sprites,            ['sprites']);
 });

@@ -1,7 +1,7 @@
 ---
 layout: impressum
 title: Dies ist eine neue Seite
-nav-title: Neues
+nav_title: Neues
 headline:
 subline:
 author:

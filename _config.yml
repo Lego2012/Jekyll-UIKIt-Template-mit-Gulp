@@ -6,7 +6,7 @@
 title: Dies ist der Webseitentitel
 
 # Trenner für Seitentitel und Webseitentitel
-title-divider: " @ "
+title_divider: " @ "
 
 # Kurze Beschreibung des Webseiteninhalts
 description: >
@@ -46,7 +46,7 @@ owner:
   phone: +49 5555 1234567
   # Einstellungen für das Kontaktformular. Es wird eine individuelle ID von Flipmail benötigt flipmail: http://flipmail.co/setup
   # Für das Verschlüsseln der Webseite: https://www.onsite.org/html/antispam_email.html
-  email-encrypted:
+  email_encrypted:
   # Das Logo wird im Verzeichnis `app/_assets/images` gespeichert
   logo: logo.png
   # Bei Eintrag der Webseite in die Google Webmaster Tools wird eine HTML-Datei generiert, die sicherstellt, dass der Webseitenbetreiber identifiziert wurde
@@ -58,8 +58,10 @@ disqus:
 
 # Eingabe Deines Google Analytics Web Tracking Code (z.B. UA-2110908-2) um Tracking zu aktivieren
 google_analytics:
+# Hier kann "Ja" eingetragen werden, damit das Include funktioniert (siehe `_includes/analytics.html`)
+piwik:
 
-social-links:
+social_links:
   dribbble:
   email: email@domain.tld
   facebook:
