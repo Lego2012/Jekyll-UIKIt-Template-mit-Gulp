@@ -100,7 +100,6 @@ host: Hostername
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone: Europe/Berlin
 
-
 #
 # Diese Einstellungen müssen nicht geändert werden
 #
@@ -118,10 +117,11 @@ gems:
 
 # Gulp kümmert sich um Bilder und Assets
 exclude:
-  - img
-  - css
-  - js
+  - images
+  - javascripts
+  - scss
   - fonts
+  - '**.pug'
   - '**.png'
   - '**.jpg'
   - '**.jpeg'
@@ -129,11 +129,12 @@ exclude:
   - '**.webp'
   - '**.svg'
   - '**.ico'
+  - '**.md'
 
 # Hier wird u. a. das Pages-Verzeichnis eingebunden
 include:
-  - _pages
   - _authors
+  - _pages
   - .htaccess
   - robots.txt
   - humans.txt

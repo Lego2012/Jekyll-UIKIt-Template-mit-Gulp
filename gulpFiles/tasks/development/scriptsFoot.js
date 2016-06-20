@@ -9,13 +9,11 @@ var config       = require('../../config').concatFoot;
 gulp.task('scriptsFoot', function() {
   return gulp.src(config.src)
     .pipe(order([
-      "jquery.js",
-      "cycle2.js",
-      "uikit.js",
-      "grid.js",
-      "sticky.js",
-      "accordion.js",
-      "parallax.js"
+      // Hier wird die Reihenfolge des Imports festgelegt. Die auskommentierten Dateien dienen als Beispiel (bei mehreren Dateien die Kommas am Ende der Zeilen nicht vergessen!)
+      "jquery.js"
+      //"datei5.js",
+      //"datei2.js",
+      //"datei1.js"
     ]))
     .pipe(concat('foot.js'))
     .pipe(gulp.dest(config.dest));
