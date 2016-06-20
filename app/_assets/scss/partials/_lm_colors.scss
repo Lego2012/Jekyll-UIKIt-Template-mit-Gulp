@@ -1,18 +1,18 @@
 .lm-color-1 {
-  border-bottom: 1px solid $conf-brand;
-  background-color: lighten($conf-brand, 40%);
+  border-bottom: 1px solid $my-brand;
+  background-color: lighten($my-brand, 40%);
 }
 
 .lm-color-2 {
-  border-bottom: 1px solid $conf-brand;
-  background-color: lighten($conf-brand, 50%);
+  border-bottom: 1px solid $my-brand;
+  background-color: lighten($my-brand, 50%);
 }
 
 .lm-color-3 {
-  border-bottom: 1px solid $conf-brand;
-  background-color: lighten($conf-brand, 60%);
+  border-bottom: 1px solid $my-brand;
+  background-color: lighten($my-brand, 60%);
 }
 
 .lm-color-footer {
-  background-color: $conf-brand;
+  background-color: $my-brand;
 }

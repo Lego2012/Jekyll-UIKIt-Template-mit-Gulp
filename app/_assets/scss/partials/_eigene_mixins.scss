@@ -4,12 +4,12 @@
 }
 
 @mixin lm-tabs-content {
-  background-color: lighten($conf-brand, 60%);
+  background-color: lighten($my-brand, 60%);
   padding-left: em-calc(200px);
   padding-right: em-calc(200px);
 }
 
 @mixin lm-section-border {
-  border-top: 1px solid $conf-brand;
-  border-bottom: 1px solid $conf-brand;
+  border-top: 1px solid $my-brand;
+  border-bottom: 1px solid $my-brand;
 }

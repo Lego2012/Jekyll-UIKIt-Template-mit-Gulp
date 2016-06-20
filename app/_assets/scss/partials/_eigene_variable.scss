@@ -3,40 +3,41 @@ $rgba-primary-0: rgba(2,84,157,1);
 $rgba-primary-1: rgba(1,55,102,1);
 
 // Eigene Variablen
-$conf-brand: $rgba-primary-0;
-$conf-text: $rgba-primary-1;
-$conf-white: #fff;
-$conf-box: $conf-brand;
-$conf-transparent: lighten($conf-brand, 5%);
-$conf-footer: darken($conf-brand, 10%);
+$my-brand: $rgba-primary-0;
+$my-text: $rgba-primary-1;
+$my-white: #fff;
+$my-box: $my-brand;
+$my-transparent: lighten($my-brand, 5%);
+$my-footer: darken($my-brand, 10%);
 
+// Der Font wird in der `baseStyles` von Google importiert
 $head-font: 'Ubuntu', sans-serif;
 $text-font: 'Roboto', sans-serif;
 $nav-font: $head-font;
 
 $base-heading-font-family : $head-font, Helvetica, Arial, sans-serif;
 
-$base-body-color : $conf-text;
-$base-heading-color : $conf-text;
-$base-link-color : $conf-text;
+$base-body-color : $my-text;
+$base-heading-color : $my-text;
+$base-link-color : $my-text;
 
 $accordion-content-padding-top : $accordion-title-padding-horizontal;
 
 // Farben der Webseite
-$navbar-background: $conf-white;
-$navbar-nav-color: $conf-text;
+$navbar-background: $my-white;
+$navbar-nav-color: $my-text;
 $navbar-nav-height: 100px;
 $navbar-nav-font-size: 16px;
 $navbar-nav-font-family : $nav-font, Helvetica, Arial, sans-serif;
-$navbar-nav-hover-background: lighten($conf-brand, 40%);
-$navbar-nav-hover-color: $conf-white;
-$navbar-nav-active-background: lighten($conf-brand, 65%);
-$navbar-nav-active-color: $conf-text;
+$navbar-nav-hover-background: lighten($my-brand, 40%);
+$navbar-nav-hover-color: $my-white;
+$navbar-nav-active-background: lighten($my-brand, 65%);
+$navbar-nav-active-color: $my-text;
 
 $button-back: $navbar-nav-active-background;
-$button-back-hover: lighten($conf-brand, 30%);
+$button-back-hover: lighten($my-brand, 30%);
 
-$base-link-color : lighten($conf-brand, 7%);
+$base-link-color : lighten($my-brand, 7%);
 $base-link-text-decoration : none;
 $base-link-hover-color : #059;
 $base-link-hover-text-decoration : underline;

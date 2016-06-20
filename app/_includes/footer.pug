@@ -1,0 +1,42 @@
+footer.lm-color-footer
+  .uk-container.uk-container-center
+    .uk-grid
+      .uk-width-medium-6-10
+        h2.uk-h3 Aktuelle Beiträge
+        ul {% include blog/blog_single.html %}
+
+        p {% include svg-icons.html %}
+
+      .uk-width-medium-2-10
+        h2.uk-h3 Die Links der Webseite
+        nav
+          ul
+            | {% for node in site.data.nav %}
+            | {% if page.url == node.url %}
+            li.active.page-link
+              a.active(href='{{ node.url }}') {{ node.title }}
+            |             {% else %}
+            li.page-link
+              a(href='{{ node.url }}') {{ node.title }}
+            |                         {% endif %}
+            |                         {% endfor %}
+      .uk-width-medium-2-10
+        h2.uk-h3 Wichtige Links
+        nav
+          ul
+            | {% for node in site.data.nav-footer %}
+            | {% if page.url == node.url %}
+            li.active.page-link
+              a.active(href='{{ node.url }}') {{ node.title }}
+            |             {% else %}
+            li.page-link
+              a(href='{{ node.url }}') {{ node.title }}
+            |                         {% endif %}
+            |                         {% endfor %}
+          a#my-id.uk-button(data-uk-smooth-scroll='data-uk-smooth-scroll') Nach oben
+    | {% include svg-icons.html %}
+.uk-container.uk-container-center.uk-text-center
+  p.copyright
+    | © {{ site.time | date: '%Y' }} 
+    a(href='{{ site.url }}')
+      | {{ site.title }}, {{ site.data.adresse.strasse }} {{ site.data.adresse.nummer }}, {{ site.data.adresse.plz }} {{ site.data.adresse.ort }}, Mobil: {{ site.data.adresse.mobil }}, Tel: {{ site.data.adresse.telefon }}

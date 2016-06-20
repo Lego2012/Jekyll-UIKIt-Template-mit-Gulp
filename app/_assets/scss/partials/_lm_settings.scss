@@ -1,7 +1,7 @@
 // Individuelle Einstellungen
 .lm-section-border {
-  border-top: 1px solid $conf-brand;
-  border-bottom: 1px solid $conf-brand;
+  border-top: 1px solid $my-brand;
+  border-bottom: 1px solid $my-brand;
 }
 
 .lm-container-small {
@@ -34,7 +34,7 @@ section {
 }
 
 aside.uebersicht {
-  border-top: 1px solid $conf-brand;
+  border-top: 1px solid $my-brand;
   padding-top: em-calc(10px);
   margin-bottom: rem-calc(50px);
 }

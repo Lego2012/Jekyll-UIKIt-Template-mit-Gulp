@@ -1,7 +1,7 @@
 .lm-header {
   min-height: rem-calc(200px);
-  border-top: 1px solid $conf-brand;
-  border-bottom: 1px solid $conf-brand;
+  border-top: 1px solid $my-brand;
+  border-bottom: 1px solid $my-brand;
   /* Die Farbe kommt von http://flatuicolors.com/ */
   padding-top: em-calc(80px);
   @include bp(small) {
@@ -59,8 +59,8 @@ section.lm-content {
   > div {
     padding-top: em-calc(180px);
     > a {
-      color: $conf-brand;
-      background-color: $conf-transparent;
+      color: $my-brand;
+      background-color: $my-transparent;
       padding: em-calc(30px);
     }
   }
@@ -90,7 +90,7 @@ section.lm-content {
 }
 
 .testimonial {
-  color: $conf-brand;
+  color: $my-brand;
 }
 
 .videos-bilder div div div div {

@@ -70,12 +70,12 @@ social_links:
   instagram:
   linkedin:
   pinterest:
-  rss:
-  twitter:
+  rss: 
+  twitter: Lemgo2000
   # channel/<your_long_string> oder user/<user-name>
-  youtube:
+  youtube: channel/UCBmD_1wJoMWIrJJEQ86AQ2Q
   # Irgendwas, das im Profilnamen nach plus.google.com/ vorkommt
-  googleplus:
+  googleplus: +LeoMerkel
 
 social:
   name: # Falls der Benutzer oder die Organisation von dem Seitennamen abweichen sollte

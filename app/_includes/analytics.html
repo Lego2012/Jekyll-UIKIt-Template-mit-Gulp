@@ -1,6 +1,13 @@
 {% comment %}
-https://michaelsoolee.com/google-analytics-jekyll/
-http://stackoverflow.com/questions/34603799/setting-jekyll-environment-for-github-pages
+
+Die Vorgehensweise wird hier beschrieben: https://michaelsoolee.com/google-analytics-jekyll/ und hier: http://stackoverflow.com/questions/34603799/setting-jekyll-environment-for-github-pages. Nur, wenn Jekyll das Production-Build ausführt, werden diese Teile auch integriert. Gesteuert wird dies in der `head.html`.
+
+{% endcomment %}
+
+{% comment %}
+
+Das folgende if-Statement sorgt dafür, dass Google Analytics ohnehin nur integriert wird, wenn die ID in der `config.yml` eingetragen wurde. Mit Piwik geht das leider nicht so einfach. Deshalb muss hier manuell der Code hineinkopiert werden. Trotzdem wird der Code aber nur dann integriert, wenn in der `config.yml` bei Piwik auch "Ja" eingetragen wurde.
+
 {% endcomment %}
 
 {% if site.google_analytics %}
@@ -10,6 +17,7 @@ http://stackoverflow.com/questions/34603799/setting-jekyll-environment-for-githu
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+		// Hier findet sich die ID aus der `config.yml` wieder. Sie wird automatisch eingetragen.
 		ga('create', '{{ site.google_analytics }}', 'auto');
 		ga('send', 'pageview', {
 		  'page': '{{ site.baseurl }}{{ page.url }}',
