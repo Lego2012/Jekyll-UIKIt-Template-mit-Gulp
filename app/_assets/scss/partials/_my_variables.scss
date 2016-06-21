@@ -10,6 +10,7 @@ $my_box: $my_brand;
 $my_transparent: lighten($my_brand, 5%);
 $my_footer: darken($my_brand, 10%);
 
+// Der Font wird in den baseStyles.scss eingebunden
 $head_font: 'Ubuntu', sans-serif;
 $text_font: 'Roboto', sans-serif;
 $nav_font: $head_font;

@@ -1,17 +1,17 @@
 <section>
   <div class="uk-container uk-container-center">
-    <article class="uk-article">
       {% for post in site.posts %}
-        <div class="uk-article-title">
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </div>
+        <article class="uk-article">
+          <div class="uk-article-title">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </div>
 
-        <p class="uk-article-meta">{% include date.html %}</p>
-        <div class="uk-article-lead">{{ post.content | split:'<!--break-->' | first }}</div>
-        {% if post.content contains '<!--break-->' %}
-          <a class="weiterlesen" href="{{ post.url }}">Weiterlesen</a>
-        {% endif %}
+          <p class="uk-article-meta">{% include date.html %}</p>
+          <div class="uk-article-lead">{{ post.content | split:'<!--break-->' | first }}</div>
+          {% if post.content contains '<!--break-->' %}
+            <a class="weiterlesen" href="{{ post.url }}">Weiterlesen</a>
+          {% endif %}
+        </article>
       {% endfor %}
-    </article>
   </div>
 </section>

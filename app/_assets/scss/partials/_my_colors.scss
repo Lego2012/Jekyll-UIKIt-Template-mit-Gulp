@@ -1,18 +1,18 @@
-.lm_color_1 {
+.my_color_1 {
   border-bottom: 1px solid $my_brand;
   background-color: lighten($my_brand, 40%);
 }
 
-.lm_color_2 {
+.my_color_2 {
   border-bottom: 1px solid $my_brand;
   background-color: lighten($my_brand, 50%);
 }
 
-.lm_color_3 {
+.my_color_3 {
   border-bottom: 1px solid $my_brand;
   background-color: lighten($my_brand, 60%);
 }
 
-.lm_color_footer {
+.my_color_footer {
   background-color: $my_brand;
 }

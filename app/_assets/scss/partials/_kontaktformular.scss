@@ -28,7 +28,7 @@
   background-color: lighten($my_brand, 50%);
 }
 
-.email_leo {
+.my_email {
   @include bp(small) {
     font-size: 16px;
   }
