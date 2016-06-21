@@ -1,1 +1,0 @@
-Die Pug-Dateien (ehemals Jade) liegen ebenfalls im Includes Ordner, damit man einerseits die einfache Eingabe hat und andererseits sehen kann, welche HTML-Dateien automatisch durch die Pug-Dateien generiert werden.
