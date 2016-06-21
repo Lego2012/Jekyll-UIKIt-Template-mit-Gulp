@@ -58,6 +58,7 @@ disqus:
 
 # Eingabe Deines Google Analytics Web Tracking Code (z.B. UA-2110908-2) um Tracking zu aktivieren
 google_analytics:
+
 # Hier kann "Ja" eingetragen werden, damit das Include funktioniert (siehe `_includes/analytics.html`)
 piwik:
 
