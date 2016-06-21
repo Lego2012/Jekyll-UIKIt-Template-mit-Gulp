@@ -3,8 +3,8 @@ var collect = require('gulp-rev-collector');
 var config  = require('../../config').collect;
 
 /**
- * Replace all links to assets in files
- * from a manifest file
+ * Ersetze alle Links zu Assets in Dateien
+ * von einer Manifest Datei
  */
 gulp.task('rev:collect', function() {
   return gulp.src(config.src)

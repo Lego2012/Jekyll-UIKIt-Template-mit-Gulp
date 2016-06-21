@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 
 /**
- * Run task browsersync:production
+ * Starte Task browsersync:production
  */
 gulp.task('publish', ['browsersync:production']);

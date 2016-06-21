@@ -3,7 +3,7 @@ var webp   = require('gulp-webp');
 var config = require('../../config').webp;
 
 /**
- * Convert images to WebP
+ * Konvertiere Bilder zu WebP
  */
 gulp.task('webp', function() {
   return gulp.src(config.src)

@@ -3,7 +3,7 @@ var base64 = require('gulp-base64');
 var config = require('../../config').base64;
 
 /**
- * Replace urls in CSS fies with base64 encoded data
+ * Ersetze URLs in CSS Dateien mit base64 enkodierten Daten
  */
 gulp.task('base64', ['sass'], function() {
   return gulp.src(config.src)

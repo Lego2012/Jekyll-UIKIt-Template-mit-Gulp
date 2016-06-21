@@ -4,18 +4,19 @@ var order        = require('gulp-order');
 var config       = require('../../config').concatFoot;
 
 /**
- * Generate footer.js and include the following files
+ * Erzeuge die footer.js und inkludiere die folgenden Dateien
  */
 gulp.task('scriptsFoot', function() {
   return gulp.src(config.src)
     .pipe(order([
+      // Hier werden die Dateien in der gewünschten Reihenfolge eingetragen
+      // Nicht vergessen, die Kommas richtig zu setzen!
       "jquery.js",
-      "cycle2.js",
       "uikit.js",
-      "grid.js",
-      "sticky.js",
-      "accordion.js",
-      "parallax.js"
+      "grid.js"
+      //"datei5.js",
+      //"datei2.js",
+      //"datei3.js"
     ]))
     .pipe(concat('foot.js'))
     .pipe(gulp.dest(config.dest));

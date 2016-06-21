@@ -14,6 +14,7 @@ module.exports = {
         baseDir: [development, build, src]
       },
       port: 9999,
+      // Keine Nachrichten an den Browser schicken
       notify: false,
       // Browser nicht automatisch öffnen
       open: false,
@@ -29,6 +30,7 @@ module.exports = {
         baseDir: [production]
       },
       port: 9998,
+      // Keine Nachrichten an den Browser schicken
       notify: false,
       // Browser nicht automatisch öffnen
       open: false
@@ -36,13 +38,6 @@ module.exports = {
   },
   delete: {
     src: [development, developmentAssets + '/css', developmentAssets + '/js']
-  },
-  pug: {
-    src: src + '/_includes/**/*.pug',
-    dest: src + '/_includes',
-    options: {
-      pretty: true
-    }
   },
   jekyll: {
     development: {
@@ -137,7 +132,7 @@ module.exports = {
     sass:    srcAssets + '/scss/**/*.{sass,scss}',
     scripts: srcAssets + '/javascripts/**/*.js',
     images:  srcAssets + '/images/**/*',
-    svg:     'vectors/*.svg'
+    svg:     srcAssets + '/images/vectors/*.svg'
   },
   jshint: {
     src: srcAssets + '/javascripts/*.js'

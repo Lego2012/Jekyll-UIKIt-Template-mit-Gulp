@@ -4,14 +4,16 @@ var browsersync = require('browser-sync');
 var config      = require('../../config').jekyll.production;
 
 /*
-* Build the Jekyll Site
+* Erzeuge die Jekyll-Site
 */
 gulp.task('jekyll:production', function(done) {
   browsersync.notify('Compiling Jekyll (Production)');
 
   /*
   * Hier wird die Produktionsumgebung festgelegt, damit z. B. Google Analytics
-  * nur beim Publish gerendert wird. Siehe dazu Details in der `default.html`
+  * nur beim Publish gerendert wird.
+  * https://michaelsoolee.com/google-analytics-jekyll/
+  * http://stackoverflow.com/questions/34603799/setting-jekyll-environment-for-github-pages
   */
   var productionEnv = process.env;
   productionEnv.JEKYLL_ENV = 'production';

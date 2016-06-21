@@ -9,7 +9,8 @@ Klone das Repository auf Deinen Computer und wechsle in den Projektordner. Start
 $ ./install-dev.sh
 ```
 
-Damit werden automatisch `bundle`, `bower install` und `npm install` gestartet.
+Damit werden automatisch `bundle`, `bower install` und `npm install` gestartet. Außerdem werden
+wichtige Dateien in den `_assets` Ordner kopiert.
 
 ## Einstellungen
 

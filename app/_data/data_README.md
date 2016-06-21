@@ -2,7 +2,7 @@
 
 Im Ordner `_data` befinden sich Dateien, die mit dem Liquid-Tag `{{ site.data.dateiname.tag }}` importiert werden können.
 
-## Navigation: Die Datei ``nav.yml``
+## Navigation: Die Datei `nav.yml`
 
 Das ist die "klassische" Navigation. Eine YAML-Datei beinhaltet die Links, die in der Datei `header.html` mit einem Loop abgefragt werden. Soll eine neue Seite hinzugefügt werden, wird sie einfach in der YAML-Datei integriert.
 
@@ -52,8 +52,6 @@ Die Datei `oeffnungszeiten.yml` ist ein Beispiel für eine Liste, die auf einer 
 
 Wenn eine Datei mit Excel als CSV-Datei gespeichert wurde, kann sie mit dem Konverter http://www.convertcsv.com/ sehr einfach in eine YAML-Datei konvertiert werden. Wenn diese dann im Ordner `_data` liegt, kann auch sie mit Liquid-Tags abgefragt werden. In unserem Beispiel heißt die Datei `unternehmen.yaml` und entstand mit Demodaten von https://www.mockaroo.com/
 
-**Wichtiger Hinweis:** Die ursprüngliche CSV-Datei darf entweder nicht denselben Namen wie die YAML-Datei haben oder muss in einem anderen Ordner liegen! In unserem Beispiel haben wir die Datei `unternehmen-csv.csv` genannt.
+**Wichtiger Hinweis:** Die ursprüngliche CSV-Datei darf entweder nicht denselben Namen wie die YAML-Datei haben oder muss in einem anderen Ordner liegen! In unserem Beispiel haben wir die Datei `unternehmen_csv.csv` genannt.
 
 Übrigens funktioniert diese Vorgehensweise auch mit JSON-Dateien. Allerdings ist der Export von Excel als CSV-Datei deutlich einfacher.
-
-

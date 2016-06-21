@@ -2,9 +2,9 @@ var gulp        = require('gulp');
 var runSequence = require('run-sequence');
 
 /**
- * Run all tasks needed for a build in defined order
+ * Starte alle Tasks, die für ein Build benötigt werden, in einer definierten Reihenfolge
  */
-gulp.task('build', ['pug'], function(callback) {
+gulp.task('build', function(callback) {
   runSequence('delete',
   [
     'jekyll',

@@ -4,7 +4,7 @@ var browsersync = require('browser-sync');
 var config      = require('../../config').jekyll.development;
 
 /**
- * Build the Jekyll Site
+ * Erzeuge die Jekyll-Site
  */
 gulp.task('jekyll', function(done) {
   browsersync.notify('Compiling Jekyll');

@@ -3,7 +3,7 @@ var rsync  = require('gulp-rsync');
 var config = require('../../config').rsync;
 
 /**
- * Copy files and folder to server
+ * Kopiere Dateien und Ordner auf den Server
  * via rsync
  */
 gulp.task('rsync', function() {

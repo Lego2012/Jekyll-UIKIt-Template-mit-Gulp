@@ -3,7 +3,7 @@ var htmlmin = require('gulp-htmlmin');
 var config  = require('../../config').optimize.html;
 
 /**
- * Minimize HTML
+ * Minimiere HTML
  */
 gulp.task('optimize:html', function() {
   return gulp.src(config.src)
