@@ -1,6 +1,6 @@
 .kontaktformular {
   // border-radius: em-calc(20px);
-  // border: 5px dashed $conf-brand;
+  // border: 5px dashed $my_brand;
   padding-top: em-calc(20px);
   padding-bottom: em-calc(20px);
   .fa {
@@ -17,18 +17,18 @@
   }
 }
 
-.kontaktformular-section {
+.kontaktformular_section {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.kontaktseite .kontaktformular-section {
+.kontaktseite .kontaktformular_section {
   padding-top: em-calc(20px);
   padding-bottom: em-calc(20px);
-  background-color: lighten($conf-brand, 50%);
+  background-color: lighten($my_brand, 50%);
 }
 
-.email-leo {
+.email_leo {
   @include bp(small) {
     font-size: 16px;
   }

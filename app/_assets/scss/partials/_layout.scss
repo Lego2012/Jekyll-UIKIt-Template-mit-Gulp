@@ -1,7 +1,7 @@
-.lm-header {
+.lm_header {
   min-height: rem-calc(200px);
-  border-top: 1px solid $conf-brand;
-  border-bottom: 1px solid $conf-brand;
+  border-top: 1px solid $my_brand;
+  border-bottom: 1px solid $my_brand;
   /* Die Farbe kommt von http://flatuicolors.com/ */
   padding-top: em-calc(80px);
   @include bp(small) {
@@ -24,7 +24,7 @@
   }
 }
 
-section.post-headline .lm-header {
+section.post-headline .lm_header {
   min-height: rem-calc(100px);
 }
 
@@ -38,7 +38,7 @@ section.headline {
   padding-bottom: 0;
 }
 
-section.lm-content {
+section.lm_content {
   margin-top: 0;
   padding-top: 0;
   @include bp(max,767px) {
@@ -54,19 +54,19 @@ section.lm-content {
   }
 }
 
-.lm-projekt-diskutieren {
+.lm_projekt_diskutieren {
   min-height: rem-calc(400px);
   > div {
     padding-top: em-calc(180px);
     > a {
-      color: $conf-brand;
-      background-color: $conf-transparent;
+      color: $my_brand;
+      background-color: $my_transparent;
       padding: em-calc(30px);
     }
   }
 }
 
-.lm-downloadbereich {
+.lm_downloadbereich {
   min-width: 100%;
   ul {
     list-style-type: none;
@@ -90,7 +90,7 @@ section.lm-content {
 }
 
 .testimonial {
-  color: $conf-brand;
+  color: $my_brand;
 }
 
 .videos-bilder div div div div {

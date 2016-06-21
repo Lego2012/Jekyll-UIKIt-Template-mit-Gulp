@@ -1,5 +1,5 @@
 footer {
-  @include lm-section-border;
+  @include lm_section_border;
   padding-top: em-calc(30px);
   padding-bottom: em-calc(20px);
   ul {
@@ -7,10 +7,10 @@ footer {
     padding-left: 0;
   }
   a {
-    color: lighten($conf-brand, 50%);
+    color: lighten($my_brand, 50%);
     font-size: em-calc(18px);
   }
   h2 {
-    color: lighten($conf-brand, 55%);
+    color: lighten($my_brand, 55%);
   }
 }

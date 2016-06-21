@@ -1,19 +1,19 @@
-.lm-kosten {
+.lm_kosten {
   background-image: url(/assets/images/papierball-auf-notizbuch.jpg);
   background-size: cover;
   background-position: center bottom;
   .uk-grid {
-    color: $conf-white;
-    background-color: tint($conf-brand, 40);
+    color: $my_white;
+    background-color: tint($my_brand, 40);
     padding: em-calc(20px) em-calc(10px);
   }
 }
 
-.lm-designer {
-  border-bottom: 1px solid $conf-brand;
+.lm_designer {
+  border-bottom: 1px solid $my_brand;
 }
 
-.lm-col-group-height {
+.lm_col_group_height {
   p {
     min-height: 90px;
   }

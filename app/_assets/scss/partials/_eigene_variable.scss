@@ -1,42 +1,42 @@
 // SASS style sheet Palette color codes
-$rgba-primary-0: rgba(2,84,157,1);
-$rgba-primary-1: rgba(1,55,102,1);
+$rgba_primary_0: rgba(2,84,157,1);
+$rgba_primary_1: rgba(1,55,102,1);
 
 // Eigene Variablen
-$conf-brand: $rgba-primary-0;
-$conf-text: $rgba-primary-1;
-$conf-white: #fff;
-$conf-box: $conf-brand;
-$conf-transparent: lighten($conf-brand, 5%);
-$conf-footer: darken($conf-brand, 10%);
+$my_brand: $rgba_primary_0;
+$my_text: $rgba_primary_1;
+$my_white: #fff;
+$my_box: $my_brand;
+$my_transparent: lighten($my_brand, 5%);
+$my_footer: darken($my_brand, 10%);
 
-$head-font: 'Ubuntu', sans-serif;
-$text-font: 'Roboto', sans-serif;
-$nav-font: $head-font;
+$head_font: 'Ubuntu', sans-serif;
+$text_font: 'Roboto', sans-serif;
+$nav_font: $head_font;
 
-$base-heading-font-family : $head-font, Helvetica, Arial, sans-serif;
+$base-heading-font-family : $head_font, Helvetica, Arial, sans-serif;
 
-$base-body-color : $conf-text;
-$base-heading-color : $conf-text;
-$base-link-color : $conf-text;
+$base-body-color : $my_text;
+$base-heading-color : $my_text;
+$base-link-color : $my_text;
 
 $accordion-content-padding-top : $accordion-title-padding-horizontal;
 
 // Farben der Webseite
-$navbar-background: $conf-white;
-$navbar-nav-color: $conf-text;
+$navbar-background: $my_white;
+$navbar-nav-color: $my_text;
 $navbar-nav-height: 100px;
 $navbar-nav-font-size: 16px;
-$navbar-nav-font-family : $nav-font, Helvetica, Arial, sans-serif;
-$navbar-nav-hover-background: lighten($conf-brand, 40%);
-$navbar-nav-hover-color: $conf-white;
-$navbar-nav-active-background: lighten($conf-brand, 65%);
-$navbar-nav-active-color: $conf-text;
+$navbar-nav-font-family : $nav_font, Helvetica, Arial, sans-serif;
+$navbar-nav-hover-background: lighten($my_brand, 40%);
+$navbar-nav-hover-color: $my_white;
+$navbar-nav-active-background: lighten($my_brand, 65%);
+$navbar-nav-active-color: $my_text;
 
 $button-back: $navbar-nav-active-background;
-$button-back-hover: lighten($conf-brand, 30%);
+$button-back-hover: lighten($my_brand, 30%);
 
-$base-link-color : lighten($conf-brand, 7%);
+$base-link-color : lighten($my_brand, 7%);
 $base-link-text-decoration : none;
 $base-link-hover-color : #059;
 $base-link-hover-text-decoration : underline;
