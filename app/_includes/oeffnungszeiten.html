@@ -1,13 +1,12 @@
-
 <div class="uk-container uk-container-center">
-  <h2>Und hier die Öffnungszeiten:</h2>
+  <h2>{{ site.data.oeffnungszeiten.titel }}</h2>
   <ul class="uk-list uk-list-striped">
-    <li>Montag: {{ site.data.oeffnungszeiten.montag }}</li>
-    <li>Dienstag:  {{ site.data.oeffnungszeiten.dienstag }}</li>
-    <li>Mittwoch:  {{ site.data.oeffnungszeiten.mittwoch }}</li>
-    <li>Donnerstag:  {{ site.data.oeffnungszeiten.donnerstag }}</li>
-    <li>Freitag:  {{ site.data.oeffnungszeiten.freitag }}</li>
-    <li>Samstag:  {{ site.data.oeffnungszeiten.samstag }}</li>
-    <li>Sonntag:  {{ site.data.oeffnungszeiten.sonntag }}</li>
+    <li><strong>{{ site.data.oeffnungszeiten.mo.name }}</strong>: {{ site.data.oeffnungszeiten.mo.zeit }}</li>
+    <li><strong>{{ site.data.oeffnungszeiten.di.name }}</strong>: {{ site.data.oeffnungszeiten.di.zeit }}</li>
+    <li><strong>{{ site.data.oeffnungszeiten.mi.name }}</strong>: {{ site.data.oeffnungszeiten.mi.zeit }}</li>
+    <li><strong>{{ site.data.oeffnungszeiten.do.name }}</strong>: {{ site.data.oeffnungszeiten.do.zeit }}</li>
+    <li><strong>{{ site.data.oeffnungszeiten.fr.name }}</strong>: {{ site.data.oeffnungszeiten.fr.zeit }}</li>
+    <li><strong>{{ site.data.oeffnungszeiten.sa.name }}</strong>: {{ site.data.oeffnungszeiten.sa.zeit }}</li>
+    <li><strong>{{ site.data.oeffnungszeiten.so.name }}</strong>: {{ site.data.oeffnungszeiten.so.zeit }}</li>
   </ul>
 </div>

@@ -1,7 +1,15 @@
 
 <div class="uk-container uk-container-center">
-  <h1>Dies ist die Übersichtsseite für die Firmen</h1>
-  <p>Die Daten dieser fiktiven Unternehmen kommen aus der Datei `unternehmen.yaml`, in der 500 Musterfirmen übersichtlich gelistet sind. Die Datei entstand aus einer Excel-Datei, die vom Kunden gepflegt und als CSV-Datei gespeichert wird. Wir haben die Datei dann von CSV zu YAML konvertiert und dazu den <a href="http://www.convertcsv.com/csv-to-yaml.htm">CSV Converter</a> benutzt.</p>
+  <h1>{{ site.data.firmen_uebersicht.titel }}</h1>
+
+  {% if site.data.firmen_uebersicht.untertitel %}
+    <h2 class="my_untertitel">{{ site.data.firmen_uebersicht.untertitel }}</h2>
+  {% endif %}
+
+  {% for absatz in site.data.firmen_uebersicht.absaetze %}
+      <p>{{ absatz }}</p>
+  {% endfor %}
+
   {% assign partners = site.data.unternehmen %}
   {% for partner in partners %}
   <hr/>

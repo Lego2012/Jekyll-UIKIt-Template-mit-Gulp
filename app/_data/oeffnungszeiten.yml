@@ -1,8 +1,34 @@
-montag: 9 Uhr bis 13 Uhr
-dienstag: 10 Uhr bis 18 Uhr
-mittwoch: 10 Uhr bis 18 Uhr
-donnerstag: 8 Uhr bis 19 Uhr
-freitag: 15 Uhr bis 18 Uhr
-samstag: geschlossen
-sonntag: geschlossen
+###################################################################
+# Titel
+# -----
+# Der Titel muss eingegeben werden, der Untertitel ist optional
+###################################################################
+# Der Titel steht in Anführungszeichen, weil ein Doppelpunkt enthalten ist
+titel: "Und hier die Öffnungszeiten:"
+untertitel:
 
+#####################################################################
+# Die Namen der Tage können frei gewählt werden (so kann z. B. auch)
+# "am Montag" verwendet werden
+#####################################################################
+mo:
+  name: Montag
+  zeit: 9 bis 13 Uhr und 15 bis 18 Uhr
+di:
+  name: Dienstag
+  zeit: 10 bis 18 Uhr
+mi:
+  name: Mittwoch
+  zeit: 10 bis 18 Uhr
+do:
+  name: Donnerstag
+  zeit: 8 bis 19 Uhr
+fr:
+  name: Freitag
+  zeit: 15 bis 18 Uhr
+sa:
+  name: Samstag
+  zeit: Auch am Samstag sind wir bis zum Mittag für Sie da!
+so:
+  name: Sonntag
+  zeit: Wir ruhen uns für Sie aus!

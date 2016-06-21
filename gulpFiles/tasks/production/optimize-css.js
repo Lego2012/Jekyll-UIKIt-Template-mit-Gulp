@@ -4,7 +4,7 @@ var size      = require('gulp-size');
 var config    = require('../../config').optimize.css;
 
 /**
- * Copy and minimize CSS files
+ * Kopiere und minimiere die CSS Dateien
  */
 gulp.task('optimize:css', function() {
   return gulp.src(config.src)

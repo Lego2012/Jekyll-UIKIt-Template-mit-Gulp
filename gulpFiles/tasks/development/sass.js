@@ -6,8 +6,8 @@ var sourcemaps   = require('gulp-sourcemaps');
 var config       = require('../../config').sass;
 
 /**
- * Generate CSS from SCSS
- * Build sourcemaps
+ * Erzeuge CSS von SCSS
+ * Erstelle Sourcemaps
  */
  gulp.task('sass', function () {
    return gulp.src(config.src)

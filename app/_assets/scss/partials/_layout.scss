@@ -1,7 +1,7 @@
-.lm-header {
+.my_header {
   min-height: rem-calc(200px);
-  border-top: 1px solid $conf-brand;
-  border-bottom: 1px solid $conf-brand;
+  border-top: 1px solid $my_brand;
+  border-bottom: 1px solid $my_brand;
   /* Die Farbe kommt von http://flatuicolors.com/ */
   padding-top: em-calc(80px);
   @include bp(small) {
@@ -24,21 +24,12 @@
   }
 }
 
-section.post-headline .lm-header {
-  min-height: rem-calc(100px);
-}
-
-h2.post-title {
-  font-size: em-calc(30px);
-  font-weight: bolder;
-}
-
 section.headline {
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-section.lm-content {
+section.my_content {
   margin-top: 0;
   padding-top: 0;
   @include bp(max,767px) {
@@ -54,55 +45,19 @@ section.lm-content {
   }
 }
 
-.lm-projekt-diskutieren {
-  min-height: rem-calc(400px);
-  > div {
-    padding-top: em-calc(180px);
-    > a {
-      color: $conf-brand;
-      background-color: $conf-transparent;
-      padding: em-calc(30px);
-    }
-  }
-}
-
-.lm-downloadbereich {
-  min-width: 100%;
-  ul {
-    list-style-type: none;
-    padding-top: em-calc(8px);
-    margin-bottom: em-calc(7px);
-    li {
-      display: inline;
-    }
-    li:not(:last-child) {
-      padding-right: 10px;
-    }
-  }
-  .active-download {
-    background-color: $navbar-nav-active-background;
-    padding: em-calc(10px);
-  }
-}
-
-.google-oben {
-  padding: em-calc(50px) 0;
-}
-
-.testimonial {
-  color: $conf-brand;
-}
-
-.videos-bilder div div div div {
-  @include bp(small) {
-    padding-bottom: 50px;
-  }
-}
-
 .post-title {
   margin-top: rem-calc(50px);
 }
 
 section.post-headline {
   padding: 0;
+}
+
+.my_untertitel {
+  margin-top: rem-calc(-10px);
+  color: $my_white;
+}
+
+.my_content h1 {
+  margin-top: rem-calc(30px);
 }

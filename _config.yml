@@ -1,40 +1,42 @@
 #
 # Diese Datei enthält notwendige Einstellungen für die Anpassungen der Webseite
 #
-
+#
 # Titel der Webseite
 title: Dies ist der Webseitentitel
-
-# Trenner für Seitentitel und Webseitentitel
+#
+# Trenner für Seitentitel und Webseite
 title_divider: " @ "
-
-# Kurze Beschreibung des Webseiteninhalts
+#
+# Kurze Beschreibung der Webseiteninhalts
 description: >
   Hier steht die Beschreibung, die lt. SEO nicht mehr als 156 Zeichen (inkl. Leerzeichen) haben soll
-
+#
 # Nicht mehr als 7 gut ausgewählte Schlüsselwörter benutzen. Idealerweise sollten die seitenrelevanten Schlüsselworte im Front Matter der jeweiligen Seite aufgeführt werden
 keywords: keyword1, keyword2, keyword3, keyword4, keyword5, keyword6, keyword7
-
+#
 # Das Verzeichnis der Webseite, z. B. /blog/
 baseurl: ""
-
+#
 # Die URL der Webseite
 url: "http://localhost:9999"
-
+#
 markdown: kramdown
-
+#
+# Jekyll macht die Builds nicht immer komplett neu, sondern inkrementell
 incremental: true
-
+#
+# Verzeichnisse der Webseite und des Build
 source: ./app
 destination: ./build
-
+#
 # Wenn Collections genutzt werden sollen, müssen sie hier aufgeführt werden. Eine gute Anleitung gibt es hier: http://jxf.me/entries/custom-collections-jekyll/
 collections:
   authors:
-
+#
 # Der Name des generellen Autors. Dieser Wert kann im Front Matter jeder Seite überschrieben werden
 author: Vorname Nachname
-
+#
 # Personenbezogene Angaben
 owner:
   name: Vorname Nachname
@@ -51,16 +53,17 @@ owner:
   logo: logo.png
   # Bei Eintrag der Webseite in die Google Webmaster Tools wird eine HTML-Datei generiert, die sicherstellt, dass der Webseitenbetreiber identifiziert wurde
   google_site_verification:
-
+#
 # Dein Disqus-Kurname (nicht Dein Benutzername), um Kommentare der Beiträge zu aktivieren
 # Deinen Kurznamen findest Du in den Einstellungen Deines Disqus-Kontos
 disqus:
-
+#
 # Eingabe Deines Google Analytics Web Tracking Code (z.B. UA-2110908-2) um Tracking zu aktivieren
 google_analytics:
+#
 # Hier kann "Ja" eingetragen werden, damit das Include funktioniert (siehe `_includes/analytics.html`)
 piwik:
-
+#
 social_links:
   dribbble:
   email: email@domain.tld
@@ -76,46 +79,48 @@ social_links:
   youtube:
   # Irgendwas, das im Profilnamen nach plus.google.com/ vorkommt
   googleplus:
-
+#
 social:
-  name: # Falls der Benutzer oder die Organisation von dem Seitennamen abweichen sollte
-  links: # Eine Reihe von Links zu den Profilen der sozialen Medien
-
-# Zusätzliche Angaben für Humans.txt
-webdesigner: Vorname Nachname
-danke1:
-  name: Vorname Nachname
-  what: was-hat-gemacht
-danke2:
-  name: Vorname Nachname
-  what: was-hat-gemacht
-danke3:
-  name: Vorname Nachname
-  what: was-hat-gemacht
-language: German
-tools:
-  standards: "HTML5, CSS3, Jekyll, JavaScript"
-  software: "git, Atom, Gulp.js, npm"
-host: Hostername
+  # Falls der Benutzer oder die Organisation von dem Seitennamen abweichen sollte
+  name:
+  # Eine Reihe von Links zu den Profilen der sozialen Medien
+  links:
+#
+# Zusätzliche Angaben für die humans.txt
+humans:
+  webdesigner: Vorname Nachname
+  danke1:
+    name: Vorname Nachname
+    what: was-hat-gemacht
+  danke2:
+    name: Vorname Nachname
+    what: was-hat-gemacht
+  danke3:
+    name: Vorname Nachname
+    what: was-hat-gemacht
+  language: German
+  tools:
+    standards: "HTML5, CSS3, Jekyll, JavaScript"
+    software: "git, Atom, Gulp.js, npm"
+  host: Hostername
+#
+#
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone: Europe/Berlin
-
-
 #
-# Diese Einstellungen müssen nicht geändert werden
+# Die folgenden Einstellungen müssen nicht geändert werden
 #
-
 permalink: :title/
-
+#
 paginate: 5
 paginate_path: "/page/:num/"
-
+#
 gems:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
   - i18n
-
+#
 # Gulp kümmert sich um Bilder und Assets
 exclude:
   - img
@@ -129,7 +134,8 @@ exclude:
   - '**.webp'
   - '**.svg'
   - '**.ico'
-
+  - '_authors/authors_README.md'
+#
 # Hier wird u. a. das Pages-Verzeichnis eingebunden
 include:
   - _pages
@@ -137,7 +143,9 @@ include:
   - .htaccess
   - robots.txt
   - humans.txt
-
+#
 # `_config.build.yml` setzt `future` und `show_drafts` auf `false`
 future: true
 show_drafts: true
+#
+#

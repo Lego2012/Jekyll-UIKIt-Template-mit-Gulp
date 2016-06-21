@@ -3,7 +3,7 @@ var gzip   = require('gulp-gzip');
 var config = require('../../config').gzip;
 
 /**
- * Gzip text files
+ * Gzip Text Dateien
  */
 gulp.task('gzip', function() {
   return gulp.src(config.src)

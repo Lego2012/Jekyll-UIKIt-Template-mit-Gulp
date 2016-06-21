@@ -3,8 +3,8 @@ var rev    = require('gulp-rev');
 var config = require('../../config').revision;
 
 /**
- * Revision all asset files and
- * write a manifest file
+ * Revision für alle Asset Dateien und
+ * schreibe eine Manifest Datei
  */
 gulp.task('revision', function() {
   return gulp.src(config.src.assets, { base: config.src.base })

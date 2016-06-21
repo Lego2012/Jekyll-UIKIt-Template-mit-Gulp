@@ -2,7 +2,7 @@ var gulp        = require('gulp');
 var config      = require('../../config').images.development;
 
 /**
- * Copy images to build folder
+ * Kopiere die Bilder in den Build-Ordner
  */
 gulp.task('images:development', function() {
   return gulp.src(config.src)

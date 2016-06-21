@@ -2,9 +2,9 @@ var gulp        = require('gulp');
 var runSequence = require('run-sequence');
 
 /**
- * Run all tasks needed for a build in defined order
+ * Starte alle Tasks, die für ein Build benötigt werden, in einer definierten Reihenfolge
  */
-gulp.task('build:production', ['pug'], function(callback) {
+gulp.task('build:production', function(callback) {
   runSequence('delete', 'jekyll:production',
   [
     'sass',
@@ -17,6 +17,8 @@ gulp.task('build:production', ['pug'], function(callback) {
   [
     'optimize:css',
     'optimize:js',
+    // Die Bilder werden am besten direkt im Ordner mit ImageOptim optimiert,
+    // da dieser Prozess sehr zeitaufwendig ist.
     //'optimize:images',
     'optimize:html',
   ],

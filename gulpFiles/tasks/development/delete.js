@@ -3,7 +3,7 @@ var del    = require('del');
 var config = require('../../config').delete;
 
 /**
- * Delete folders and files
+ * Lösche Dateien und Ordner
  */
 gulp.task('delete', function(callback) {
   del(config.src, callback);

@@ -9,8 +9,8 @@
 /* Die UIKit-Variablen werden von hier kopiert: */
 /* app/_bower_components/uikit/scss/uikit-variables.scss */
 /* app/_bower_components/uikit/scss/core/variables.scss */
-@import "eigene_variable";
-@import "eigene_mixins";
+@import "my_variables";
+@import "my_mixins";
 
 @import "uikit";
 
@@ -23,17 +23,12 @@
 @import "imagehover-extended.min"; // http://imagehover.io/docs
 
 @import "baseStyles";
-@import "lm_settings";
+@import "my_settings";
 @import "layout";
 @import "navbar";
-@import "buttons";
-@import "lm_colors";
+@import "my_colors";
 @import "kontaktformular";
-@import "accordion";
 @import "footer";
-@import "tabs";
-@import "article";
-@import "startseite";
 @import "ueber_uns";
 
 @import "svg-icons";

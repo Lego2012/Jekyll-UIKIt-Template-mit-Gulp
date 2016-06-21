@@ -1,16 +1,18 @@
 ---
 layout: default
+headline: Dies ist ein Beitrag, den Sie gerade ausgewählt haben
+subline: Er kommt aus dem Blog
 ---
 
 <section class="headline">
-  <header class="lm_header">
+  <header class="my_header">
     <hgroup class="uk-container uk-container-center uk-text-center">
-        <h1> {{ page.headline }}</h1>
-        <h2> {{ page.subline }}</h2>
+        <h1> {{ layout.headline }}</h1>
+        <h2> {{ layout.subline }}</h2>
       </hgroup>
   </header>
 </section>
 
-<section class="lm_content">
+<section class="my_content">
   {{ content }}
 </section>

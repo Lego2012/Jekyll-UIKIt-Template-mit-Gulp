@@ -1,0 +1,43 @@
+// SASS style sheet Palette color codes
+$rgba_primary_0: rgba(2,84,157,1);
+$rgba_primary_1: rgba(1,55,102,1);
+
+// Eigene Variablen
+$my_brand: $rgba_primary_0;
+$my_text: $rgba_primary_1;
+$my_white: #fff;
+$my_box: $my_brand;
+$my_transparent: lighten($my_brand, 5%);
+$my_footer: darken($my_brand, 10%);
+
+// Der Font wird in den baseStyles.scss eingebunden
+$head_font: 'Ubuntu', sans-serif;
+$text_font: 'Roboto', sans-serif;
+$nav_font: $head_font;
+
+$base-heading-font-family : $head_font, Helvetica, Arial, sans-serif;
+
+$base-body-color : $my_text;
+$base-heading-color : $my_text;
+$base-link-color : $my_text;
+
+$accordion-content-padding-top : $accordion-title-padding-horizontal;
+
+// Farben der Webseite
+$navbar-background: $my_white;
+$navbar-nav-color: $my_text;
+$navbar-nav-height: 100px;
+$navbar-nav-font-size: 16px;
+$navbar-nav-font-family : $nav_font, Helvetica, Arial, sans-serif;
+$navbar-nav-hover-background: lighten($my_brand, 40%);
+$navbar-nav-hover-color: $my_white;
+$navbar-nav-active-background: lighten($my_brand, 65%);
+$navbar-nav-active-color: $my_text;
+
+$button-back: $navbar-nav-active-background;
+$button-back-hover: lighten($my_brand, 30%);
+
+$base-link-color : lighten($my_brand, 7%);
+$base-link-text-decoration : none;
+$base-link-hover-color : #059;
+$base-link-hover-text-decoration : underline;

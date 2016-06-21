@@ -3,7 +3,7 @@ layout: null
 ---
 
 /* TEAM */
-	Web Designer: {{ site.webdesigner }}
+	Web Designer: {{ site.humans.webdesigner }}
 	Author: {{ site.owner.name }}
 	Kontakt: {{ site.owner.email }}
 	Twitter: {{ site.owner.twitter }}
@@ -16,13 +16,13 @@ layout: null
 	From: {{ site.owner.location }}
 
 /* THANKS */
-	{{ site.danke1.name }} ({{ site.danke1.what }})
-	{{ site.danke2.name }} ({{ site.danke1.what }})
-	{{ site.danke3.name }} ({{ site.danke1.what }})
+	{{ site.humans.danke1.name }} ({{ site.humans.danke1.what }})
+	{{ site.humans.danke2.name }} ({{ site.humans.danke1.what }})
+	{{ site.humans.danke3.name }} ({{ site.humans.danke1.what }})
 
 /* SITE */
 	Last update: {{ site.time | date: '%F' }}
-	Language: {{ site.language }}
-	Software: {{ site.tools.software }}
-	Standards: {{ site.tools.standards }}
-	Hosted on: {{ site.host }}
+	Language: {{ site.humans.language }}
+	Software: {{ site.humans.tools.software }}
+	Standards: {{ site.humans.tools.standards }}
+	Hosted on: {{ site.humans.host }}
