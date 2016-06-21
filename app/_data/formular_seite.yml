@@ -1,0 +1,11 @@
+###################################################################
+# Überschrift der Kontaktseite
+###################################################################
+titel: Kontaktüberschrift!
+
+p1: Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Etiam rhoncus. Cras varius. Pellentesque ut neque. Praesent nonummy mi in odio.
+
+p2: Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Aenean massa. Phasellus gravida semper nisi. Quisque id odio.
+
+# Dieser Text ist in Anführungszeichen gesetzt, weil ein Doppelpunkt darin vorkommt
+p3: "Wenn Sie das Kontaktformular nicht nutzen möchten, können Sie mir auch direkt eine Email schreiben:"
