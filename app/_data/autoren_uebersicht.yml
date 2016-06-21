@@ -1,0 +1,21 @@
+######################################################################
+# Titel und Untertitel
+# --------------------
+# Ein Titel muss vergeben werden, ein Untertitel kann vergeben werden
+######################################################################
+titel: Dies ist die Übersichtsseite für Autoren
+untertitel:
+
+######################################################################
+# Absätze
+# -------
+# Hier können beliebig viele Absätze eingefügt werden. Sie müssen
+# nur mit einem vorangestellten Bindestrich entsprechend eingerückt
+# werden. Werden Sonderzeichen wie ":" benutzt, muss der Absatz
+# in Anführungszeichen eingegeben werden, damit die Zeichen korrekt
+# interpretiert werden.
+######################################################################
+absaetze:
+  - Die Daten dieser fiktiven Autoren sind eine Collection, die in der <code>_config.yml</code> als solche angegeben wurde. Die Dateien der Autoren befinden sich im Verzeichnis <code>_authors</code> und haben als Template <code>authors.html</code>. Für jeden einzelnen Autor wird automatisch eine eigene Seite generiert und kann verlinkt werden. Gibt es einen <code>Nickname</code>, wird der für den Titel und in der Navigation benutzt.
+
+  - Es können beliebig viele Absätze generiert werden.
