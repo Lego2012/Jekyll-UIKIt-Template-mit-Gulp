@@ -23,8 +23,8 @@ layout: default
     </style>
 
     {% if page.headline %}
-    <header class="my_header">
-      <hgroup class="uk-container uk-container-center uk-text-center">
+    <header class="my-header">
+      <hgroup>
           <h1> {{ page.headline }}</h1>
           <h2> {% if page.subline %}{{ page.subline }}{% endif %}</h2>
         </hgroup>
@@ -34,8 +34,8 @@ layout: default
 {% else %}
   <section class="headline">
     {% if page.headline %}
-    <header class="my_header">
-      <hgroup class="uk-container uk-container-center uk-text-center">
+    <header class="my-header">
+      <hgroup>
           <h1> {{ page.headline }}</h1>
           <h2> {% if page.subline %}{{ page.subline }}{% endif %}</h2>
         </hgroup>
@@ -44,6 +44,6 @@ layout: default
   </section>
 {% endif %}
 
-<section class="my_content">
+<section class="my-content">
   {{ content }}
 </section>

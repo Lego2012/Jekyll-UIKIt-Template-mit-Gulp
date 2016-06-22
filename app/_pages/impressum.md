@@ -1,5 +1,5 @@
 ---
-layout: impressum
+layout: pave-v1
 title: Dies ist eine neue Seite
 nav_title: Neues
 headline:

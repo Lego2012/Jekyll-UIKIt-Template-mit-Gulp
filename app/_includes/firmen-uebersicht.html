@@ -3,11 +3,11 @@
   <h1>{{ site.data.firmen_uebersicht.titel }}</h1>
 
   {% if site.data.firmen_uebersicht.untertitel %}
-    <h2 class="my_untertitel">{{ site.data.firmen_uebersicht.untertitel }}</h2>
+  <h2 class="my_untertitel">{{ site.data.firmen_uebersicht.untertitel }}</h2>
   {% endif %}
 
   {% for absatz in site.data.firmen_uebersicht.absaetze %}
-      <p>{{ absatz }}</p>
+  <p>{{ absatz }}</p>
   {% endfor %}
 
   {% assign partners = site.data.unternehmen %}

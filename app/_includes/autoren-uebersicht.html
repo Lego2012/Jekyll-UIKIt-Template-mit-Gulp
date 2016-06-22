@@ -3,22 +3,22 @@
   <h1>{{ site.data.autoren_uebersicht.titel }}</h1>
 
   {% if site.data.autoren_uebersicht.untertitel %}
-    <h2 class="my_untertitel">{{ site.data.autoren_uebersicht.untertitel }}</h2>
+  <h2 class="my_untertitel">{{ site.data.autoren_uebersicht.untertitel }}</h2>
   {% endif %}
 
   {% for paragraph in site.data.autoren_uebersicht.absaetze %}
-    <p>{{ paragraph }}</p>
+  <p>{{ paragraph }}</p>
   {% endfor %}
 
   {% assign authors = site.authors %}
   {% for author in authors %}
-    {% if author.nickname %}
-      <hr/>
-      <h2><a href="{{ author.permalink }}">{{ author.nickname }}</a></h2>
-      {% else %}
-      <h2><a href="{{ author.permalink }}">{{ author.title }}</a></h2>
-    {% endif %}
-    <p>{{ author.description }}</p><a href="{{ author.permalink }}">Zum Autor{% if author.nickname %} {{ author.nickname }}{% endif %}</a>
+  {% if author.nickname %}
+  <hr/>
+  <h2><a href="{{ author.permalink }}">{{ author.nickname }}</a></h2>
+  {% else %}
+  <h2><a href="{{ author.permalink }}">{{ author.title }}</a></h2>
+  {% endif %}
+  <p>{{ author.description }}</p><a href="{{ author.permalink }}">Zum Autor{% if author.nickname %} {{ author.nickname }}{% endif %}</a>
   {% endfor %}
 </div>
 <hr/>

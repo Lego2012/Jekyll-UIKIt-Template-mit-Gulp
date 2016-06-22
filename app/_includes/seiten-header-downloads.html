@@ -9,12 +9,12 @@
 
 <nav class="lm-downloadbereich">
   <ul><strong>Sie befinden sich hier:</strong>
-  {% for node in site.data.download-nav %}
+    {% for node in site.data.download-nav %}
     {% if page.url == node.url %}
-      <a class="active-download" href="{{ node.url }}">{{ node.title }}</a>
+    <a class="active-download" href="{{ node.url }}">{{ node.title }}</a>
     {% else %}
-      <li><a href="{{ node.url }}">{{ node.title }}</a></li>
+    <li><a href="{{ node.url }}">{{ node.title }}</a></li>
     {% endif %}
-  {% endfor %}
+    {% endfor %}
   </ul>
 </nav>
