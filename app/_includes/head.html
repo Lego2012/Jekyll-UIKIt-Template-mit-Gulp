@@ -4,11 +4,10 @@
 
   <meta id="dynamik-viewport" name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  {% if page.keywords %}
-    <meta name="keywords" itemprop="keywords" content="{{ page.keywords }}"/>
-  {% else %}
-    <meta name="keywords" itemprop="keywords" content="{{ site.keywords }}"/>
-  {% endif %}
+  {% comment %}
+    Der Meta-Tag für Keywords wird nicht mehr empfohlen.
+    Siehe dazu auch https://github.com/joshbuchea/HEAD
+  {% endcomment %}
 
   {% seo %}
 
