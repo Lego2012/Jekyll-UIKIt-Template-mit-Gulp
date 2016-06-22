@@ -1,14 +1,14 @@
 
 <header>
-  <nav class="uk-navbar uk-clearfix">
-    <a class="uk-navbar-brand" href="{{ site.baseurl }}/">
+  <nav>
+    <a href="{{ site.baseurl }}/">
       <img src="/assets/images/{{ site.owner.logo }}" alt="Logo"/>
     </a>
 
-    <ul class="uk-navbar-nav uk-float-right">
+    <ul>
       {% for node in site.data.nav %}
         {% if page.url == node.url %}
-          <li class="uk-active"><a class="uk-active" href="{{ node.url }}">{{ node.title }}</a></li>
+          <li class="active"><a class="active" href="{{ node.url }}">{{ node.title }}</a></li>
         {% else %}
           <li><a href="{{ node.url }}">{{ node.title }}</a></li>
         {% endif %}

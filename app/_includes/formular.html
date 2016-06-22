@@ -1,4 +1,4 @@
-<div class="uk-width-medium-1-3" role="form">
+<div role="form">
   <!-- http://flipmail.co/setup-->
   <form id="contactform" method="post" action="//flipmail.co/api/{{ site.owner.flipmail }}">
     <p>Name (Pflichtfeld)<br/><span class="your-name">
@@ -11,7 +11,7 @@
         <input type="hidden" name="_valid[message]" value="required"/>
         <textarea name="message" cols="40" rows="21" aria-invalid="false" placeholder="Wäre schön, wenn Sie hier etwas reinschreiben"></textarea></span></p>
     <p>
-      <button class="uk-button" type="submit">Abschicken</button>
+      <button type="submit">Abschicken</button>
     </p>
     <input type="hidden" name="_after" value="{{ site.url }}/danke"/>
   </form>
