@@ -2,3 +2,4 @@ bower_components
 build
 node_modules
 .asset-cache
+app/.jekyll-metadata
