@@ -61,10 +61,6 @@ module.exports = {
       dest: productionAssets + '/fonts'
     }
   },
-  sass: {
-    src:  srcAssets + '/scss/**/*.{sass,scss}',
-    dest: developmentAssets + '/css'
-  },
   concatHead: {
     src: srcAssets + '/javascripts/head/*',
     dest: developmentAssets +  '/js'
@@ -105,16 +101,6 @@ module.exports = {
     dest: production,
     options: {}
   },
-  base64: {
-    src: developmentAssets + '/css/*.css',
-    dest: developmentAssets + '/css',
-    options: {
-      baseDir: build,
-      extensions: ['png'],
-      maxImageSize: 20 * 1024, // bytes
-      debug: false
-    }
-  },
   watch: {
     jekyll: [
       '_config.yml',
@@ -129,10 +115,10 @@ module.exports = {
       src + '/_pages/**/*.{html,markdown,md}',
       src + '/*.{html,markdown,md,yml,json,txt,xml}'
     ],
-    sass:    srcAssets + '/scss/**/*.{sass,scss}',
-    scripts: srcAssets + '/javascripts/**/*.js',
-    images:  srcAssets + '/images/**/*',
-    svg:     srcAssets + '/images/vectors/*.svg'
+    gruntSass:    srcAssets + '/scss/**/*.{sass,scss}',
+    scripts:      srcAssets + '/javascripts/**/*.js',
+    images:       srcAssets + '/images/**/*',
+    svg:          srcAssets + '/images/vectors/*.svg'
   },
   jshint: {
     src: srcAssets + '/javascripts/*.js'

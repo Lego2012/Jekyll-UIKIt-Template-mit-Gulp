@@ -1,6 +1,6 @@
-# Confidea Template mit UIKit powered by Gulp und Sass
+# Confidea Template mit Kickoff Framework powered by Gulp und Sass
 
-### Aktuell ist der Branch `develop-nojade`
+### Aktuell ist der Branch `blank-kickoff`
 
 ## Installation
 Klone das Repository auf Deinen Computer und wechsle in den Projektordner. Starte:
@@ -41,3 +41,9 @@ $ rake notify
 ```
 
 Die Platzhalter `my-website.com` müssen natürlich durch die eigene Domain ersetzt werden.
+
+### Hinweis:
+
+Der Sass-Task wird von Gulp mittels Grunt aufgerufen, weil nur der die Kickoff-Dateien korrekt kompilieren kann. Mit dem Gulp-Sass Plugin funktionierte das nicht wegen der Kommentare, die mit `//` beginnen.
+
+Dazu existiert die Gruntfile.js, in der unser Sass-Task definiert ist.

@@ -7,14 +7,11 @@ var runSequence = require('run-sequence');
 gulp.task('build:production', function(callback) {
   runSequence('delete', 'jekyll:production',
   [
-    'sass',
+    'gruntSass',
     'scriptsHead',
     'scriptsFoot',
     'fonts:production',
     'images:production',
-  ],
-  'base64',
-  [
     'optimize:css',
     'optimize:js',
     // Die Bilder werden am besten direkt im Ordner mit ImageOptim optimiert,

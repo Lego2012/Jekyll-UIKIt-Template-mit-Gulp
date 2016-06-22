@@ -134,7 +134,7 @@ exclude:
   - '**.webp'
   - '**.svg'
   - '**.ico'
-  - '_authors/authors_README.md'
+  - '_authors/authors-README.md'
 #
 # Hier wird u. a. das Pages-Verzeichnis eingebunden
 include:

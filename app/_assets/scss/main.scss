@@ -1,15 +1,14 @@
-@import "animate";
-@import "imagehover-extended.min"; // http://imagehover.io/docs
+@import "kickoff";
 
-@import "my_variables";
-@import "my_mixins";
-@import "my_settings";
-@import "my_colors";
+@import "vendor/animate";
+@import "vendor/imagehover-extended.min"; // http://imagehover.io/docs
 
-@import "svg-icons";
+@import "my-settings";
 
-@import "baseStyles";
-@import "layout";
-@import "navbar";
-@import "kontaktformular";
-@import "footer";
+@import "my-svg-icons";
+
+@import "my-baseStyles";
+@import "my-layout";
+@import "my-navbar";
+@import "my-kontaktformular";
+@import "partials/footer";
