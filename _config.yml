@@ -12,9 +12,6 @@ title_divider: " @ "
 description: >
   Hier steht die Beschreibung, die lt. SEO nicht mehr als 156 Zeichen (inkl. Leerzeichen) haben soll
 #
-# Nicht mehr als 7 gut ausgewählte Schlüsselwörter benutzen. Idealerweise sollten die seitenrelevanten Schlüsselworte im Front Matter der jeweiligen Seite aufgeführt werden
-keywords: keyword1, keyword2, keyword3, keyword4, keyword5, keyword6, keyword7
-#
 # Das Verzeichnis der Webseite, z. B. /blog/
 baseurl: ""
 #
