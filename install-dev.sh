@@ -6,15 +6,9 @@ echo 'Bundle installed.'
 echo '++++++++++++++++++++'
 echo '++++++++++++++++++++'
 bower install
-
-cp ./bower_components/jquery/dist/jquery.js ./app/_assets/javascripts/foot/05-jquery.js
-cp ./bower_components/modernizr/modernizr.js ./app/_assets/javascripts/head/05-modernizr.js
-cp ./bower_components/animate.css/animate.css ./app/_assets/scss/vendor/_animate.scss
-
 echo '++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++'
 echo 'Files copied -'
-echo 'Bower programs installed.'
 echo '++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++'
 npm install
