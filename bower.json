@@ -2,10 +2,10 @@
   "name": "confidea-template",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.1",
     "modernizr": "~2.8.3"
   },
   "devDependencies": {
-    "animate.css": "^3.5.1"
+    "animate.css": "^3.5.1",
+    "foundation-sites": "^6.2.3"
   }
 }

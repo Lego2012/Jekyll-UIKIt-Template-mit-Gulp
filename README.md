@@ -12,6 +12,11 @@ $ ./install-dev.sh
 Damit werden automatisch `bundle`, `bower install` und `npm install` gestartet. Außerdem werden
 wichtige Dateien in den `_assets` Ordner kopiert.
 
+Um die Komponenten wie jQuery, Modernizr usw. zu installieren, starte anschließend noch
+
+```sh
+$ ./components.sh
+```
 ## Einstellungen
 
 Öffne `gulpFiles/config.js` und ändere die Einstellungen falls nötig. Eigentlich müssen nur die `rsync` Einstellungen angepasst werden. Ändere `destination` zum Pfad Deines Webservers und ändere `hostname` und `username`.
